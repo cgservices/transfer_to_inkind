@@ -1,0 +1,10 @@
+language: ruby
+sudo: required
+rvm: 2.4.1
+
+cache:
+  - bundler
+
+script:
+  - bundle install
+  - bundle exec rspec

@@ -1,0 +1,7491 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:26 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - Perl Dancer 1.3136
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Perl Dancer 1.3136
+      Content-Length:
+      - '2187'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"operators":[{"operator_id":1707,"operator":"9Mobile Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":1437,"operator":"Aircel
+        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":1428,"operator":"Aircel
+        Assam India","country_id":766,"country":"India"},{"operator_id":1425,"operator":"Aircel
+        Bihar India","country_id":766,"country":"India"},{"operator_id":1376,"operator":"Aircel
+        Chennai India","country_id":766,"country":"India"},{"operator_id":1432,"operator":"Aircel
+        Delhi India","country_id":766,"country":"India"},{"operator_id":2202,"operator":"Aircel
+        Gujarat India","country_id":766,"country":"India"},{"operator_id":759,"operator":"Aircel
+        Haryana India","country_id":766,"country":"India"},{"operator_id":1430,"operator":"Aircel
+        HP India","country_id":766,"country":"India"},{"operator_id":1431,"operator":"Aircel
+        JK India","country_id":766,"country":"India"},{"operator_id":1438,"operator":"Aircel
+        Karnataka India","country_id":766,"country":"India"},{"operator_id":1436,"operator":"Aircel
+        Kerala India","country_id":766,"country":"India"},{"operator_id":1378,"operator":"Aircel
+        Kolkata India","country_id":766,"country":"India"},{"operator_id":1450,"operator":"Aircel
+        Maharashtra India","country_id":766,"country":"India"},{"operator_id":1433,"operator":"Aircel
+        Mumbai India","country_id":766,"country":"India"},{"operator_id":1429,"operator":"Aircel
+        North East India","country_id":766,"country":"India"},{"operator_id":1427,"operator":"Aircel
+        Orissa India","country_id":766,"country":"India"},{"operator_id":1910,"operator":"Aircel
+        Punjab India","country_id":766,"country":"India"},{"operator_id":1912,"operator":"Aircel
+        Rajasthan India","country_id":766,"country":"India"},{"operator_id":1377,"operator":"Aircel
+        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":1434,"operator":"Aircel
+        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":1435,"operator":"Aircel
+        Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":1426,"operator":"Aircel
+        West Bengal India","country_id":766,"country":"India"},{"operator_id":2184,"operator":"Airtel
+        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2217,"operator":"Airtel
+        Assam India","country_id":766,"country":"India"},{"operator_id":1449,"operator":"Airtel
+        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":2185,"operator":"Airtel
+        Bihar India","country_id":766,"country":"India"},{"operator_id":2218,"operator":"Airtel
+        Chennai India","country_id":766,"country":"India"},{"operator_id":2186,"operator":"Airtel
+        Delhi India","country_id":766,"country":"India"},{"operator_id":2187,"operator":"Airtel
+        Gujarat India","country_id":766,"country":"India"},{"operator_id":2219,"operator":"Airtel
+        Haryana India","country_id":766,"country":"India"},{"operator_id":2220,"operator":"Airtel
+        Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2221,"operator":"Airtel
+        Jammu and Kashmir India","country_id":766,"country":"India"},{"operator_id":2222,"operator":"Airtel
+        Karnataka India","country_id":766,"country":"India"},{"operator_id":2223,"operator":"Airtel
+        Kerala India","country_id":766,"country":"India"},{"operator_id":2224,"operator":"Airtel
+        Kolkata India","country_id":766,"country":"India"},{"operator_id":2188,"operator":"Airtel
+        Maharashtra India","country_id":766,"country":"India"},{"operator_id":2225,"operator":"Airtel
+        MP and Chattisgarh India","country_id":766,"country":"India"},{"operator_id":2189,"operator":"Airtel
+        Mumbai India","country_id":766,"country":"India"},{"operator_id":1537,"operator":"Airtel
+        Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":2226,"operator":"Airtel
+        North East India","country_id":766,"country":"India"},{"operator_id":2227,"operator":"Airtel
+        Orissa India","country_id":766,"country":"India"},{"operator_id":2228,"operator":"Airtel
+        Punjab India","country_id":766,"country":"India"},{"operator_id":2190,"operator":"Airtel
+        Rajasthan India","country_id":766,"country":"India"},{"operator_id":2191,"operator":"Airtel
+        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2229,"operator":"Airtel
+        UP West and Uttarakhand India","country_id":766,"country":"India"},{"operator_id":2192,"operator":"Airtel
+        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":2230,"operator":"Airtel
+        West Bengal India","country_id":766,"country":"India"},{"operator_id":1411,"operator":"Axis
+        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":1447,"operator":"Banglalink
+        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":2431,"operator":"BPJS
+        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2456,"operator":"Bsnl
+        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2457,"operator":"Bsnl
+        Assam India","country_id":766,"country":"India"},{"operator_id":2460,"operator":"Bsnl
+        Bihar and Jharkhand India","country_id":766,"country":"India"},{"operator_id":2461,"operator":"Bsnl
+        Chennai India","country_id":766,"country":"India"},{"operator_id":2463,"operator":"Bsnl
+        Gujarat India","country_id":766,"country":"India"},{"operator_id":2464,"operator":"Bsnl
+        Haryana India","country_id":766,"country":"India"},{"operator_id":2465,"operator":"Bsnl
+        Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2466,"operator":"Bsnl
+        Jammu and Kashmir India","country_id":766,"country":"India"},{"operator_id":2467,"operator":"Bsnl
+        Karnataka India","country_id":766,"country":"India"},{"operator_id":2468,"operator":"Bsnl
+        Kerala India","country_id":766,"country":"India"},{"operator_id":2469,"operator":"Bsnl
+        Kolkata Metro India","country_id":766,"country":"India"},{"operator_id":2470,"operator":"Bsnl
+        Madhya Pradesh and Chhattisgarh India","country_id":766,"country":"India"},{"operator_id":2471,"operator":"Bsnl
+        Maharashtra India","country_id":766,"country":"India"},{"operator_id":2473,"operator":"Bsnl
+        North East India India","country_id":766,"country":"India"},{"operator_id":2474,"operator":"Bsnl
+        Orissa India","country_id":766,"country":"India"},{"operator_id":2475,"operator":"Bsnl
+        Punjab India","country_id":766,"country":"India"},{"operator_id":2476,"operator":"Bsnl
+        Rajasthan India","country_id":766,"country":"India"},{"operator_id":2477,"operator":"Bsnl
+        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2478,"operator":"Bsnl
+        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":2479,"operator":"Bsnl
+        Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":2480,"operator":"Bsnl
+        West Bengal India","country_id":766,"country":"India"},{"operator_id":1726,"operator":"CellC
+        South Africa","country_id":868,"country":"South Africa"},{"operator_id":2453,"operator":"Claro
+        El Salvador USD","country_id":730,"country":"El Salvador"},{"operator_id":1581,"operator":"Claro
+        Guatemala USD","country_id":756,"country":"Guatemala"},{"operator_id":1584,"operator":"Claro
+        Honduras USD","country_id":762,"country":"Honduras"},{"operator_id":1590,"operator":"Claro
+        Nicaragua USD","country_id":824,"country":"Nicaragua"},{"operator_id":1959,"operator":"Claro
+        TV Guatemala USD","country_id":756,"country":"Guatemala"},{"operator_id":177,"operator":"Digicel
+        El Salvador","country_id":730,"country":"El Salvador"},{"operator_id":1808,"operator":"DTH
+        Airtel India","country_id":766,"country":"India"},{"operator_id":1804,"operator":"DTH
+        Dish TV India","country_id":766,"country":"India"},{"operator_id":1903,"operator":"DTH
+        Plan Cignal-TV Philippines","country_id":840,"country":"Philippines"},{"operator_id":1805,"operator":"DTH
+        Reliance BIG TV India","country_id":766,"country":"India"},{"operator_id":1806,"operator":"DTH
+        Sun Direct India","country_id":766,"country":"India"},{"operator_id":1809,"operator":"DTH
+        Tata-Sky India","country_id":766,"country":"India"},{"operator_id":1807,"operator":"DTH
+        Videocon India","country_id":766,"country":"India"},{"operator_id":2061,"operator":"Farmacias
+        Cruz Verde Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":2011,"operator":"Generika
+        Philippines","country_id":840,"country":"Philippines"},{"operator_id":246,"operator":"Globe
+        Telecom Philippines","country_id":840,"country":"Philippines"},{"operator_id":1612,"operator":"Glo
+        Mobile Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":249,"operator":"GrameenPhone
+        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":2193,"operator":"IDEA
+        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2231,"operator":"IDEA
+        Assam India","country_id":766,"country":"India"},{"operator_id":2194,"operator":"IDEA
+        Bihar India","country_id":766,"country":"India"},{"operator_id":2195,"operator":"IDEA
+        Delhi India","country_id":766,"country":"India"},{"operator_id":2196,"operator":"IDEA
+        Gujarat India","country_id":766,"country":"India"},{"operator_id":2232,"operator":"IDEA
+        Haryana India","country_id":766,"country":"India"},{"operator_id":2233,"operator":"IDEA
+        Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2234,"operator":"IDEA
+        Jammu & Kashmir India","country_id":766,"country":"India"},{"operator_id":2235,"operator":"IDEA
+        Karnataka India","country_id":766,"country":"India"},{"operator_id":2236,"operator":"IDEA
+        Kerala India","country_id":766,"country":"India"},{"operator_id":2237,"operator":"IDEA
+        Kolkata India","country_id":766,"country":"India"},{"operator_id":2238,"operator":"IDEA
+        Madhya Pradesh & Chattisgarh India","country_id":766,"country":"India"},{"operator_id":2197,"operator":"IDEA
+        Maharashtra India","country_id":766,"country":"India"},{"operator_id":2198,"operator":"IDEA
+        Mumbai India","country_id":766,"country":"India"},{"operator_id":2239,"operator":"IDEA
+        NESA India","country_id":766,"country":"India"},{"operator_id":2240,"operator":"IDEA
+        Orissa India","country_id":766,"country":"India"},{"operator_id":2241,"operator":"IDEA
+        Punjab India","country_id":766,"country":"India"},{"operator_id":2199,"operator":"IDEA
+        Rajasthan India","country_id":766,"country":"India"},{"operator_id":2200,"operator":"IDEA
+        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2201,"operator":"IDEA
+        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":2242,"operator":"IDEA
+        Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":2243,"operator":"IDEA
+        West Bengal India","country_id":766,"country":"India"},{"operator_id":1312,"operator":"Indosat
+        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2060,"operator":"La
+        Torre Supermercados Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":2244,"operator":"MTNL
+        Delhi India","country_id":766,"country":"India"},{"operator_id":2245,"operator":"MTNL
+        Mumbai India","country_id":766,"country":"India"},{"operator_id":1724,"operator":"MTN
+        South Africa","country_id":868,"country":"South Africa"},{"operator_id":511,"operator":"Ooredoo
+        Qatar","country_id":844,"country":"Qatar"},{"operator_id":1671,"operator":"PLN
+        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2267,"operator":"Reliance
+        GSM Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2268,"operator":"Reliance
+        GSM Assam India","country_id":766,"country":"India"},{"operator_id":2269,"operator":"Reliance
+        GSM Bihar & Jharkhand India","country_id":766,"country":"India"},{"operator_id":2270,"operator":"Reliance
+        GSM Chennai India","country_id":766,"country":"India"},{"operator_id":2271,"operator":"Reliance
+        GSM Delhi India","country_id":766,"country":"India"},{"operator_id":2272,"operator":"Reliance
+        GSM Gujarat India","country_id":766,"country":"India"},{"operator_id":2273,"operator":"Reliance
+        GSM Haryana India","country_id":766,"country":"India"},{"operator_id":2274,"operator":"Reliance
+        GSM Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2275,"operator":"Reliance
+        GSM Jammu & Kashmir India","country_id":766,"country":"India"},{"operator_id":2276,"operator":"Reliance
+        GSM Karnataka India","country_id":766,"country":"India"},{"operator_id":2277,"operator":"Reliance
+        GSM Kerala India","country_id":766,"country":"India"},{"operator_id":2278,"operator":"Reliance
+        GSM Kolkata India","country_id":766,"country":"India"},{"operator_id":2279,"operator":"Reliance
+        GSM Madhya Pradesh & Chhattisgarh India","country_id":766,"country":"India"},{"operator_id":2280,"operator":"Reliance
+        GSM Maharashtra India","country_id":766,"country":"India"},{"operator_id":2281,"operator":"Reliance
+        GSM Mumbai India","country_id":766,"country":"India"},{"operator_id":2282,"operator":"Reliance
+        GSM North East India","country_id":766,"country":"India"},{"operator_id":2283,"operator":"Reliance
+        GSM Orissa India","country_id":766,"country":"India"},{"operator_id":2284,"operator":"Reliance
+        GSM Punjab India","country_id":766,"country":"India"},{"operator_id":2285,"operator":"Reliance
+        GSM Rajasthan India","country_id":766,"country":"India"},{"operator_id":2286,"operator":"Reliance
+        GSM Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2287,"operator":"Reliance
+        GSM UP East India","country_id":766,"country":"India"},{"operator_id":2288,"operator":"Reliance
+        GSM UP West India","country_id":766,"country":"India"},{"operator_id":2289,"operator":"Reliance
+        GSM West Bengal India","country_id":766,"country":"India"},{"operator_id":1446,"operator":"Robi
+        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":1934,"operator":"Smartbro
+        Philippines","country_id":840,"country":"Philippines"},{"operator_id":570,"operator":"Smart
+        Philippines","country_id":840,"country":"Philippines"},{"operator_id":1311,"operator":"Sun
+        Philippines","country_id":840,"country":"Philippines"},{"operator_id":2166,"operator":"Super
+        Selectos El Salvador","country_id":730,"country":"El Salvador"},{"operator_id":2203,"operator":"Tata
+        Docomo Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2204,"operator":"Tata
+        Docomo Bihar India","country_id":766,"country":"India"},{"operator_id":2335,"operator":"Tata
+        Docomo CDMA Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2336,"operator":"Tata
+        Docomo CDMA Bihar India","country_id":766,"country":"India"},{"operator_id":2337,"operator":"Tata
+        Docomo CDMA Gujarat India","country_id":766,"country":"India"},{"operator_id":2294,"operator":"Tata
+        Docomo CDMA Haryana India","country_id":766,"country":"India"},{"operator_id":2299,"operator":"Tata
+        Docomo CDMA Kolkata India","country_id":766,"country":"India"},{"operator_id":2300,"operator":"Tata
+        Docomo CDMA Madhya Pradesh India","country_id":766,"country":"India"},{"operator_id":2339,"operator":"Tata
+        Docomo CDMA Mumbai India","country_id":766,"country":"India"},{"operator_id":2301,"operator":"Tata
+        Docomo CDMA Orissa India","country_id":766,"country":"India"},{"operator_id":2302,"operator":"Tata
+        Docomo CDMA Punjab India","country_id":766,"country":"India"},{"operator_id":2340,"operator":"Tata
+        Docomo CDMA Rajasthan India","country_id":766,"country":"India"},{"operator_id":2341,"operator":"Tata
+        Docomo CDMA Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2303,"operator":"Tata
+        Docomo CDMA UP West India","country_id":766,"country":"India"},{"operator_id":2304,"operator":"Tata
+        Docomo CDMA West Bengal India","country_id":766,"country":"India"},{"operator_id":2205,"operator":"Tata
+        Docomo Delhi India","country_id":766,"country":"India"},{"operator_id":2206,"operator":"Tata
+        Docomo Gujarat India","country_id":766,"country":"India"},{"operator_id":2306,"operator":"Tata
+        Docomo Haryana India","country_id":766,"country":"India"},{"operator_id":2307,"operator":"Tata
+        Docomo Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2309,"operator":"Tata
+        Docomo Karnataka India","country_id":766,"country":"India"},{"operator_id":2310,"operator":"Tata
+        Docomo Kerala India","country_id":766,"country":"India"},{"operator_id":2311,"operator":"Tata
+        Docomo Kolkata India","country_id":766,"country":"India"},{"operator_id":2312,"operator":"Tata
+        Docomo Madhya Pradesh India","country_id":766,"country":"India"},{"operator_id":2207,"operator":"Tata
+        Docomo Maharashtra India","country_id":766,"country":"India"},{"operator_id":2208,"operator":"Tata
+        Docomo Mumbai India","country_id":766,"country":"India"},{"operator_id":2313,"operator":"Tata
+        Docomo Orissa India","country_id":766,"country":"India"},{"operator_id":2314,"operator":"Tata
+        Docomo Punjab India","country_id":766,"country":"India"},{"operator_id":2209,"operator":"Tata
+        Docomo Rajasthan India","country_id":766,"country":"India"},{"operator_id":2210,"operator":"Tata
+        Docomo Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2315,"operator":"Tata
+        Docomo UP West India","country_id":766,"country":"India"},{"operator_id":2211,"operator":"Tata
+        Docomo Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":2316,"operator":"Tata
+        Docomo West Bengal India","country_id":766,"country":"India"},{"operator_id":2317,"operator":"Telenor
+        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2318,"operator":"Telenor
+        Bihar India","country_id":766,"country":"India"},{"operator_id":2319,"operator":"Telenor
+        Gujarat India","country_id":766,"country":"India"},{"operator_id":2320,"operator":"Telenor
+        Maharashtra & Goa India","country_id":766,"country":"India"},{"operator_id":2321,"operator":"Telenor
+        UP East India","country_id":766,"country":"India"},{"operator_id":2322,"operator":"Telenor
+        UP West India","country_id":766,"country":"India"},{"operator_id":1324,"operator":"Telkomsel
+        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":1327,"operator":"Three
+        Telecom Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":1505,"operator":"Tigo
+        El Salvador","country_id":730,"country":"El Salvador"},{"operator_id":1605,"operator":"Tigo
+        Guatemala USD","country_id":756,"country":"Guatemala"},{"operator_id":2214,"operator":"Tigo
+        TV Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":1960,"operator":"TUC
+        Nicaragua","country_id":824,"country":"Nicaragua"},{"operator_id":2326,"operator":"Videocon
+        Punjab India","country_id":766,"country":"India"},{"operator_id":1923,"operator":"Viva
+        DR DTH","country_id":725,"country":"Dominican Republic"},{"operator_id":712,"operator":"Vodacom
+        South Africa","country_id":868,"country":"South Africa"},{"operator_id":1381,"operator":"Vodafone
+        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2328,"operator":"Vodafone
+        Assam India","country_id":766,"country":"India"},{"operator_id":1908,"operator":"Vodafone
+        Bihar India","country_id":766,"country":"India"},{"operator_id":1380,"operator":"Vodafone
+        Chennai India","country_id":766,"country":"India"},{"operator_id":1382,"operator":"Vodafone
+        Delhi India","country_id":766,"country":"India"},{"operator_id":1386,"operator":"Vodafone
+        Gujarat India","country_id":766,"country":"India"},{"operator_id":1392,"operator":"Vodafone
+        Haryana India","country_id":766,"country":"India"},{"operator_id":2329,"operator":"Vodafone
+        Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2330,"operator":"Vodafone
+        Jammu & Kashmir India","country_id":766,"country":"India"},{"operator_id":2331,"operator":"Vodafone
+        Karnataka India","country_id":766,"country":"India"},{"operator_id":1393,"operator":"Vodafone
+        Kerala India","country_id":766,"country":"India"},{"operator_id":1385,"operator":"Vodafone
+        Kolkata India","country_id":766,"country":"India"},{"operator_id":2332,"operator":"Vodafone
+        Madhya Pradesh & Chhattisgarh India","country_id":766,"country":"India"},{"operator_id":1396,"operator":"Vodafone
+        Maharashtra India","country_id":766,"country":"India"},{"operator_id":1384,"operator":"Vodafone
+        Mumbai India","country_id":766,"country":"India"},{"operator_id":2333,"operator":"Vodafone
+        North East India","country_id":766,"country":"India"},{"operator_id":2672,"operator":"Vodafone
+        Orissa India","country_id":766,"country":"India"},{"operator_id":1387,"operator":"Vodafone
+        Punjab India","country_id":766,"country":"India"},{"operator_id":1390,"operator":"Vodafone
+        Rajasthan India","country_id":766,"country":"India"},{"operator_id":1395,"operator":"Vodafone
+        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":1388,"operator":"Vodafone
+        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":1389,"operator":"Vodafone
+        Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":2334,"operator":"Vodafone
+        West Bengal India","country_id":766,"country":"India"},{"operator_id":215,"operator":"XL
+        Indonesia","country_id":767,"country":"Indonesia"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:26 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:27 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:27 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:28 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:29 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:30 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:30 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:31 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:31 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:32 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:32 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:33 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:33 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:34 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:34 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:35 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:35 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:36 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:37 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:38 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:38 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:39 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:39 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:40 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:40 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:41 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:41 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:42 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:42 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:43 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:43 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:44 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:45 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:46 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:46 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:47 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:47 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:48 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:48 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:49 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:49 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:50 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:50 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:51 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:51 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:52 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:53 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:53 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:54 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:55 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:55 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:56 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:56 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:57 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:57 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:58 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:58 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:34:59 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:34:59 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:00 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:00 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:01 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:01 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:02 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:03 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:03 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:04 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:05 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:05 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:06 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:06 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:07 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:07 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:08 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:08 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:09 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:09 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:10 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:11 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:11 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:12 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:13 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:13 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:14 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:14 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:15 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:15 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:16 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:16 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:17 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:17 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:18 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:19 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:19 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:20 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:21 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:21 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:22 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:22 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:23 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:23 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:24 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:24 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:25 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:25 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:26 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:27 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:27 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:28 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:29 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:29 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:30 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:30 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:31 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:31 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:32 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:32 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:33 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:33 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:34 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:34 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:35 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:36 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:37 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:37 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:38 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:38 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:39 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:39 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:40 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:40 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:41 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:41 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:42 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:42 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:43 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:44 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:45 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:45 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:46 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:46 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:47 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:47 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:48 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:48 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:49 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:49 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:50 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:50 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:51 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:52 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:53 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:53 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:54 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:54 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:55 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:55 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:56 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:56 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:57 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:57 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:58 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:35:58 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:35:59 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:00 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:01 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:01 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:02 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:02 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:03 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:03 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:04 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:04 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:05 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:05 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:06 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:06 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:07 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:08 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:09 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:09 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:10 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:10 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:11 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:11 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:12 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:12 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:13 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:13 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:14 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:14 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:15 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:16 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:17 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:17 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:18 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:18 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:19 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:19 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:20 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:20 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:21 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:21 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:22 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:22 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:23 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:24 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:25 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:25 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:26 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:26 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:27 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:27 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:28 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:28 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:29 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:29 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:30 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:30 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:31 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:32 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:33 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:33 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:34 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:34 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:35 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:35 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:36 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:36 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:37 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:37 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:38 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:38 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:39 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:40 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:41 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:41 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:42 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:42 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:43 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:43 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:44 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:44 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:45 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:45 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:46 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:46 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:47 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:47 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:48 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:49 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:50 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:50 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:51 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:51 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:52 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:52 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:53 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:53 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:54 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:54 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:55 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:55 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:56 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:57 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:57 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:58 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:36:59 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:36:59 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:00 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:00 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:01 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:01 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:02 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:02 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:03 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:03 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:04 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:05 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:05 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:06 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:07 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:07 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:08 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:08 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:09 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:09 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:10 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:10 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:11 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:11 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:12 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:12 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:13 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:13 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:14 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:15 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:16 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:16 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:17 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:17 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:18 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:18 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:19 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:19 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:20 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:20 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:21 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:21 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:22 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:23 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:23 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:24 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:25 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:25 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:26 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:26 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:27 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:27 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:28 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:28 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:29 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:29 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:30 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:30 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:31 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:32 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:33 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:33 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:34 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:34 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:35 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:35 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:36 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:36 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:37 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:37 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:38 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:39 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:39 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:40 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:41 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:41 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:42 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:42 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:43 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:43 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:44 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:44 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:45 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:45 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:46 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:46 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:47 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:48 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:49 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:49 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:50 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:50 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:51 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:51 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:52 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:52 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:53 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:53 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:54 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:54 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:55 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:56 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:57 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:57 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:58 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:58 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:37:59 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:37:59 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:00 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:00 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:01 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:01 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:02 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:02 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:03 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:04 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:04 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:05 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:06 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:06 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:07 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:07 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:08 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:08 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:09 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:09 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:10 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:10 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:11 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:11 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:12 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:12 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:13 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:14 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:15 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:15 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:16 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:16 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:17 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:17 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:18 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:18 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:19 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:19 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:20 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:20 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:21 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:22 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:23 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:23 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:24 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:24 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:25 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:25 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:26 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:26 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:27 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:27 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:28 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:28 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:29 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:29 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:30 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:31 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:32 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:32 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:33 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:33 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:34 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:34 GMT
+- request:
+    method: get
+    uri: https://api.transferto.com/v1.1/operators/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 24 Jan 2018 14:38:35 GMT
+      Server:
+      - nginx
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":404,"message":"Not Found"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 14:38:35 GMT
+recorded_with: VCR 4.0.0

@@ -1,6 +1,6 @@
 # TransferTo InKind API
 
-A client for TransferTo InKind API communication
+A client for TransferTo InKind API communication, docs for the API can be found here https://api.transferto.com/docs.html
 
 ## Installation
 

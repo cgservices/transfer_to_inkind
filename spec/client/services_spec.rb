@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe InkindApi::Client do
@@ -6,7 +8,7 @@ describe InkindApi::Client do
       .to receive(:new)
       .at_least(:once)
       .and_call_original
-      
+
     VCR.use_cassette('services') do
       expect(CLIENT.services.size).to be > 0
     end

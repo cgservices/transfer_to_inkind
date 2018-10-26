@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 ENV['RAILS_ENV'] ||= 'test'
 
 # Set load path
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 
 require 'inkind'
 require 'pry'
@@ -11,11 +13,11 @@ require 'vcr'
 require 'simplecov'
 SimpleCov.start
 
-CONFIG = YAML.load(File.open('./config.yml'))
+CONFIG = YAML.safe_load(File.open('./config.yml'))
 CLIENT = InkindApi::Client.new(CONFIG)
 
 VCR.configure do |config|
-  config.cassette_library_dir = "spec/fixtures"
+  config.cassette_library_dir = 'spec/fixtures'
   config.hook_into :webmock
   config.filter_sensitive_data('') do |i|
     i.request.headers.reject! do |key|

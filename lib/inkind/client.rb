@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 module InkindApi
   # Client class for InKind TransferTo API
   class Client
-
     def initialize(config)
       @config ||= config
     end
@@ -44,12 +45,12 @@ module InkindApi
 
     def products(operator_id = nil)
       products = []
-      operators.each do |operator|
-        get "operators/#{operator.id}/products" do |json|
-          json['products'].each do |product|
-            products << Entity::Product.new(product, operator)
-          end
+      if operator_id.nil?
+        operators.each do |operator|
+          products += get_products_per_operator operator.id
         end
+      else
+        products += get_products_per_operator operator_id
       end
       products
     end
@@ -57,16 +58,16 @@ module InkindApi
     private
 
     def get(url)
-      conn = Faraday.new(url: @config['endpoint'])
+      conn     = Faraday.new(url: @config['endpoint'])
       response = conn.get url do |req|
         req.headers['X-TransferTo-Apikey'] = @config['api_key']
-        req.headers['X-TransferTo-Nonce'] = (Time.now.to_f * 1000).to_s
-        req.headers['X-TransferTo-Hmac'] = calculate_hmac(req.headers['X-TransferTo-Nonce'])
+        req.headers['X-TransferTo-Nonce']  = (Time.now.to_f * 1000).to_s
+        req.headers['X-TransferTo-Hmac']   = calculate_hmac(req.headers['X-TransferTo-Nonce'])
       end
       json = JSON.parse(response.body)
       capture_error json
       yield json
-    rescue => e
+    rescue StandardError => e
       p e
     end
 
@@ -84,5 +85,14 @@ module InkindApi
       raise "An error occurred [#{json['errors'][0]['code']}]: #{json['errors'][0]['message']}" if json['errors']
     end
 
+    def get_products_per_operator(operator_id)
+      products = []
+      get "operators/#{operator_id}/products" do |json|
+        json['fixed_value_recharges'].each do |product|
+          products << Entity::Product.new(product)
+        end
+      end
+      products
+    end
   end
 end

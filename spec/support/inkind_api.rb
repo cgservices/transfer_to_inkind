@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def xml_fixture(file_name)
   File.open(File.dirname(__FILE__) + '/fixtures/' + file_name + '.json', 'rb').read.strip
 end

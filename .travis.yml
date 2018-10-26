@@ -7,4 +7,5 @@ cache:
 
 script:
   - bundle install
+  - cp .envtest .env
   - bundle exec rspec

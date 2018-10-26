@@ -13,15 +13,14 @@ require 'vcr'
 require 'simplecov'
 SimpleCov.start
 
-CONFIG = YAML.safe_load(File.open('./config.yml'))
-CLIENT = InkindApi::Client.new(CONFIG)
+CLIENT = InkindApi::Client.new
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures'
   config.hook_into :webmock
   config.filter_sensitive_data('') do |i|
     i.request.headers.reject! do |key|
-      ['X-Transferto-Apikey', 'X-Transferto-Nonce', 'X-Transferto-Hmac'].include? key
+      %w[X-Transferto-Apikey X-Transferto-Nonce X-Transferto-Hmac].include? key
     end
   end
 end

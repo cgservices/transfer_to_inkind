@@ -57,9 +57,9 @@ module InkindApi
     private
 
     def get(url)
-      conn     = Faraday.new(url: ENV['TRANSFERT_TO_INKIND_ENDPOINT'])
+      conn     = Faraday.new(url: ENV['TRANSFER_TO_INKIND_ENDPOINT'])
       response = conn.get url do |req|
-        req.headers['X-TransferTo-Apikey'] = ENV['TRANSFERT_TO_INKIND_API_KEY']
+        req.headers['X-TransferTo-Apikey'] = ENV['TRANSFER_TO_INKIND_API_KEY']
         req.headers['X-TransferTo-Nonce']  = (Time.now.to_f * 1000).to_s
         req.headers['X-TransferTo-Hmac']   = calculate_hmac(req.headers['X-TransferTo-Nonce'])
       end
@@ -74,8 +74,8 @@ module InkindApi
       Base64.encode64(
         OpenSSL::HMAC.digest(
           'sha256',
-          ENV['TRANSFERT_TO_INKIND_API_SECRET'],
-          [ENV['TRANSFERT_TO_INKIND_API_KEY'], nonce].join
+          ENV['TRANSFER_TO_INKIND_API_SECRET'],
+          [ENV['TRANSFER_TO_INKIND_API_KEY'], nonce].join
         )
       )
     end

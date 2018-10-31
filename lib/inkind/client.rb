@@ -5,7 +5,6 @@ require 'dotenv/load'
 module InkindApi
   # Client class for InKind TransferTo API
   class Client
-
     def ping?
       get 'ping' do |json|
         return json['status'] == 'up'
@@ -85,10 +84,13 @@ module InkindApi
     end
 
     def get_products_per_operator(operator_id)
-      products = []
+      products      = []
+      product_types = %w[fixed_value_recharges fixed_value_vouchers variable_value_recharges variable_value_payments]
       get "operators/#{operator_id}/products" do |json|
-        json['fixed_value_recharges'].each do |product|
-          products << Entity::Product.new(product)
+        product_types.each do |product_type|
+          json[product_type].each do |product|
+            products << Factory::Product.create(product_type, product)
+          end
         end
       end
       products

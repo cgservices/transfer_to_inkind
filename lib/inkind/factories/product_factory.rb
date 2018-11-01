@@ -10,7 +10,7 @@ module InkindApi
         when 'variable_value_payments', 'variable_value_recharges'
           product = Entity::VariableValueProduct.new product_data
         else
-          product = nil
+          raise StandardError.new, "This product type is not managed: #{type}"
         end
         product
       end

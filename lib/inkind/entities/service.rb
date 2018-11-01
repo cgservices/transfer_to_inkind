@@ -6,8 +6,16 @@ module InkindApi
       attr_accessor :id, :name
 
       def initialize(service)
-        @id = service['service_id']
-        @name = service['service']
+        parameters = service_parameters service
+
+        @id   = parameters['service_id']
+        @name = parameters['service']
+      end
+
+      private
+
+      def service_parameters(service)
+        service.slice('service_id', 'service')
       end
     end
   end

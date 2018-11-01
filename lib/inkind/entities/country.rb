@@ -6,8 +6,16 @@ module InkindApi
       attr_accessor :id, :name
 
       def initialize(country)
-        @id = country['country_id']
-        @name = country['country']
+        parameters = country_parameters country
+
+        @id   = parameters['country_id']
+        @name = parameters['country']
+      end
+
+      private
+
+      def country_parameters(country)
+        country.slice('country_id', 'country')
       end
     end
   end

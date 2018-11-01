@@ -6,12 +6,17 @@ module InkindApi
       attr_accessor :id, :name, :country
 
       def initialize(operator)
-        @id = operator['operator_id']
-        @name = operator['operator']
-        @country = Country.new(
-          country_id: operator['country_id'],
-          country: operator['country']
-        )
+        parameters = operator_parameters operator
+
+        @id      = parameters['operator_id']
+        @name    = parameters['operator']
+        @country = Country.new(operator)
+      end
+
+      private
+
+      def operator_parameters(parameters)
+        parameters.slice('operator_id', 'operator')
       end
     end
   end

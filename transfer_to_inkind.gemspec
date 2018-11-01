@@ -21,6 +21,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'faraday'
 
   gem.add_development_dependency 'bundler'
+  gem.add_development_dependency('factory_bot', ['>= 0'])
+  gem.add_development_dependency('faker', ['>= 0'])
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'pry-coolline'
   gem.add_development_dependency 'pry-nav'

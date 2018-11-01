@@ -2,6 +2,9 @@
 
 ENV['RAILS_ENV'] ||= 'test'
 
+require 'simplecov'
+SimpleCov.start
+
 # Set load path
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 
@@ -11,9 +14,6 @@ require 'yaml'
 require 'vcr'
 require 'factory_bot'
 require 'faker'
-
-require 'simplecov'
-SimpleCov.start
 
 CLIENT = InkindApi::Client.new
 

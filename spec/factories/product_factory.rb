@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   currency = Faker::Currency.code
   factory :product do
-
     id { Faker::Number(5) }
     name { Faker::Lorem.word }
     short_description { Faker::Lorem.sentence }

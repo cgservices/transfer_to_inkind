@@ -3,7 +3,6 @@
 module InkindApi
   module Entity
     class Product
-
       attr_accessor :id, :name, :short_description, :country, :operator, :service,
                     :value, :currency, :local_value, :local_currency,
                     :account_currency, :wholesale_price, :retail_price, :fee

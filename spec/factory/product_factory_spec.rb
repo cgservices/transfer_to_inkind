@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 describe InkindApi::Factory::Product do
-
   context 'with a fixed_value_voucher product' do
     it 'returns a FixedValueProduct' do
       expect(described_class.create('fixed_value_vouchers', {})).to be_a InkindApi::Entity::FixedValueProduct
@@ -30,7 +29,5 @@ describe InkindApi::Factory::Product do
     it 'returns an error' do
       expect { described_class.create('foo', {}) }.to raise_error StandardError
     end
-
   end
-
 end

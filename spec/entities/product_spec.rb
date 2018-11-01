@@ -1,33 +1,30 @@
 # frozen_string_literal: true
 
 describe InkindApi::Entity::Product do
-
   parameters = {
-    'product_id'         => 64,
-    'product_name'       => '$14 Basic',
+    'product_id' => 64,
+    'product_name' => '$14 Basic',
     'product_short_desc' => '14 USD Basic',
-    'operator_id'        => 1959,
-    'operator'           => 'Claro TV Guatemala USD',
-    'country_id'         => 756,
-    'country'            => 'Guatemala',
-    'service_id'         => 1,
-    'service'            => 'television',
-    'product_value'      => 14,
-    'product_currency'   => 'USD',
-    'local_value'        => 14,
-    'local_currency'     => 'USD',
-    'account_currency'   => 'USD',
-    'wholesale_price'    => 12.5,
-    'retail_price'       => 13.5,
-    'fee'                => 0
+    'operator_id' => 1959,
+    'operator' => 'Claro TV Guatemala USD',
+    'country_id' => 756,
+    'country' => 'Guatemala',
+    'service_id' => 1,
+    'service' => 'television',
+    'product_value' => 14,
+    'product_currency' => 'USD',
+    'local_value' => 14,
+    'local_currency' => 'USD',
+    'account_currency' => 'USD',
+    'wholesale_price' => 12.5,
+    'retail_price' => 13.5,
+    'fee' => 0
   }
 
   subject { described_class.new(parameters) }
 
   describe '#initialize' do
-
     context 'with valid values' do
-
       it 'initializes a product with the right values' do
         expect(subject.id).to be 64
         expect(subject.name).to eq '$14 Basic'

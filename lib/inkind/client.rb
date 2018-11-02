@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'dotenv/load'
-
 module InkindApi
   # Client class for InKind TransferTo API
   class Client

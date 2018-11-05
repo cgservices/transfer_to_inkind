@@ -29,7 +29,6 @@ describe InkindApi::Client do
     expect(InkindApi::Entity::Product)
       .to receive(:new)
       .at_least(:once)
-      .and_call_original
 
     VCR.use_cassette('products') do
       expect(CLIENT.products.size).to be > 0

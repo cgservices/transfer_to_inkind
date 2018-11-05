@@ -56,14 +56,15 @@ module InkindApi
     def get(url)
       conn     = Faraday.new(url: ENV['TRANSFER_TO_INKIND_ENDPOINT'])
       response = conn.get url do |req|
-        req.headers['X-TransferTo-Apikey'] = ENV['TRANSFER_TO_INKIND_API_KEY']
         req.headers['X-TransferTo-Nonce']  = (Time.now.to_f * 1000).to_s
         req.headers['X-TransferTo-Hmac']   = calculate_hmac(req.headers['X-TransferTo-Nonce'])
+        req.headers['X-TransferTo-Apikey'] = ENV['TRANSFER_TO_INKIND_API_KEY']
       end
       json = JSON.parse(response.body)
       capture_error json
       yield json
     rescue StandardError => e
+      puts ENV['TRANSFER_TO_INKIND_ENDPOINT'] + url
       p e
     end
 
@@ -87,11 +88,24 @@ module InkindApi
       get "operators/#{operator_id}/products" do |json|
         product_types.each do |product_type|
           json[product_type].each do |product|
-            products << Factory::Product.create(product_type, product)
+            suggested_values = get_suggested_values_per_product(product_type, product['product_id'])
+            products << Factory::Product.create(product_type, product, suggested_values)
           end
         end
       end
       products
+    end
+
+    def get_suggested_values_per_product(product_type, product_id)
+      return [] unless %w[variable_value_recharges variable_value_payments].include?(product_type)
+
+      suggested_values = []
+      get "product/#{product_type}/#{product_id}/suggested_values" do |json|
+        json['suggested_values'].each do |suggested_value|
+          suggested_values << Entity::SuggestedValue.new(suggested_value)
+        end
+      end
+      suggested_values
     end
   end
 end

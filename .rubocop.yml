@@ -1,0 +1,33 @@
+AbcSize:
+  Max: 20
+
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Performance:
+  Enabled: true
+
+Style/WordArray:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+RSpec/ExampleLength:
+  Max: 10
+
+Style/BlockComments:
+  Enabled: false

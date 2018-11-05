@@ -6,16 +6,24 @@ FactoryBot.define do
     id { Faker::Number(5) }
     name { Faker::Lorem.word }
     short_description { Faker::Lorem.sentence }
-    value { Faker::Number.decimal(2) }
     currency { currency }
-    local_value { Faker::Number.decimal(2) }
-    local_currency { currency }
-    amount_currency { currency }
-    wholesale_price { Faker::Number.decimal(2) }
-    retail_price { Faker::Number.decimal(2) }
-    fee { Faker::Number.decimal(2) }
+    account_currency { currency }
+
     operator
     country
     service
+  end
+
+  factory :fixed_value_product, parent: :product do
+    value { Faker::Number.decimal(2) }
+    local_value { Faker::Number.decimal(2) }
+    local_currency { currency }
+    wholesale_price { Faker::Number.decimal(2) }
+    retail_price { Faker::Number.decimal(2) }
+    fee { Faker::Number.decimal(2) }
+  end
+
+  factory :variable_value_product, parent: :product do
+    suggested_values { create_list(:suggested_value, 2) }
   end
 end

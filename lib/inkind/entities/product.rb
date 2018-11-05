@@ -3,9 +3,9 @@
 module InkindApi
   module Entity
     class Product
-      attr_accessor :id, :name, :short_description, :country, :operator, :service,
-                    :value, :currency, :local_value, :local_currency,
-                    :account_currency, :wholesale_price, :retail_price, :fee
+      attr_accessor :id, :name, :short_description,
+                    :country, :operator, :service,
+                    :currency, :account_currency
 
       def initialize(product)
         parameters = product_parameters product
@@ -13,14 +13,8 @@ module InkindApi
         @id                = parameters['product_id']
         @name              = parameters['product_name']
         @short_description = parameters['product_short_desc']
-        @value             = parameters['product_value']
         @currency          = parameters['product_currency']
-        @local_value       = parameters['local_value']
-        @local_currency    = parameters['local_currency']
         @account_currency  = parameters['account_currency']
-        @wholesale_price   = parameters['wholesale_price']
-        @retail_price      = parameters['retail_price']
-        @fee               = parameters['fee']
 
         @operator = Operator.new(product)
         @country  = Country.new(product)

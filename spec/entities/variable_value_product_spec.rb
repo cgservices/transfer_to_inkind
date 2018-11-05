@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Entity::Product do
+describe InkindApi::Entity::VariableValueProduct do
   parameters = {
     'product_id' => 64,
     'product_name' => '$14 Basic',
@@ -11,14 +11,8 @@ describe InkindApi::Entity::Product do
     'country' => 'Guatemala',
     'service_id' => 1,
     'service' => 'television',
-    'product_value' => 14,
     'product_currency' => 'USD',
-    'local_value' => 14,
-    'local_currency' => 'USD',
-    'account_currency' => 'USD',
-    'wholesale_price' => 12.5,
-    'retail_price' => 13.5,
-    'fee' => 0
+    'account_currency' => 'USD'
   }
 
   subject { described_class.new(parameters) }
@@ -29,14 +23,8 @@ describe InkindApi::Entity::Product do
         expect(subject.id).to be 64
         expect(subject.name).to eq '$14 Basic'
         expect(subject.short_description).to eq '14 USD Basic'
-        expect(subject.value).to eq 14
         expect(subject.currency).to eq 'USD'
-        expect(subject.local_value).to eq 14
-        expect(subject.local_currency).to eq 'USD'
         expect(subject.account_currency).to eq 'USD'
-        expect(subject.wholesale_price).to eq 12.5
-        expect(subject.retail_price).to eq 13.5
-        expect(subject.fee).to eq 0
       end
 
       it 'initializes a product with a valid operator' do

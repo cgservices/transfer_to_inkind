@@ -8,6 +8,7 @@ FactoryBot.define do
     short_description { Faker::Lorem.sentence }
     currency { currency }
     account_currency { currency }
+    type { %w[voucher recharge payment].sample }
 
     operator
     country

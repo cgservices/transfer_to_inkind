@@ -64,7 +64,6 @@ module InkindApi
       capture_error json
       yield json
     rescue StandardError => e
-      puts ENV['TRANSFER_TO_INKIND_ENDPOINT'] + url
       p e
     end
 

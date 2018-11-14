@@ -43,10 +43,10 @@ module InkindApi
       products = []
       if operator_id.nil?
         operators.each do |operator|
-          products += get_products_per_operator operator.id
+          products += products_per_operator operator.id
         end
       else
-        products += get_products_per_operator operator_id
+        products += products_per_operator operator_id
       end
       products
     end
@@ -81,13 +81,14 @@ module InkindApi
       raise "An error occurred [#{json['errors'][0]['code']}]: #{json['errors'][0]['message']}" if json['errors']
     end
 
-    def get_products_per_operator(operator_id)
-      products      = []
-      product_types = %w[fixed_value_recharges fixed_value_vouchers variable_value_recharges variable_value_payments]
+    def products_per_operator(operator_id)
+      products = []
+      # TODO: Re-add the variable_value_payment type
+      product_types = %w[fixed_value_recharges fixed_value_vouchers variable_value_recharges]
       get "operators/#{operator_id}/products" do |json|
         product_types.each do |product_type|
           json[product_type].each do |product|
-            suggested_values = get_suggested_values_per_product(product_type, product['product_id'])
+            suggested_values = product_type == 'variable_value_recharges' ? suggested_values(product['product_id']) : nil
             products << Factory::Product.create(product_type, product, suggested_values)
           end
         end
@@ -95,11 +96,9 @@ module InkindApi
       products
     end
 
-    def get_suggested_values_per_product(product_type, product_id)
-      return [] unless %w[variable_value_recharges variable_value_payments].include?(product_type)
-
+    def suggested_values(product_id)
       suggested_values = []
-      get "product/#{product_type}/#{product_id}/suggested_values" do |json|
+      get "product/variable_value_recharges/#{product_id}/suggested_values" do |json|
         json['suggested_values'].each do |suggested_value|
           suggested_values << Entity::SuggestedValue.new(suggested_value)
         end

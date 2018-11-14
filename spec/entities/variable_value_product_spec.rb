@@ -46,4 +46,41 @@ describe InkindApi::Entity::VariableValueProduct do
       end
     end
   end
+
+  describe 'min' do
+    it 'should return the minimal retail_price' do
+      subject.suggested_values = build_suggested_values
+      expect(subject.min(:retail_price)).to eq 0.2
+    end
+
+    it 'should return the minimal wholesale_price' do
+      subject.suggested_values = build_suggested_values
+      expect(subject.min(:wholesale_price)).to eq 0.90
+    end
+  end
+
+  describe 'max' do
+    it 'should return the maximal retail_price' do
+      subject.suggested_values = build_suggested_values
+      expect(subject.max(:retail_price)).to eq 10.00
+    end
+
+    it 'should return the maximal wholesale_price' do
+      subject.suggested_values = build_suggested_values
+      expect(subject.max(:wholesale_price)).to eq 9.90
+    end
+  end
+
+  private
+
+  def build_suggested_values
+    [
+      build(:suggested_value, retail_price: 0.2, wholesale_price: 2.90),
+      build(:suggested_value, retail_price: 5.00, wholesale_price: 5.90),
+      build(:suggested_value, retail_price: 3.00, wholesale_price: 9.90),
+      build(:suggested_value, retail_price: 10.00, wholesale_price: 3.90),
+      build(:suggested_value, retail_price: 7.00, wholesale_price: 0.90),
+      build(:suggested_value, retail_price: 7.00, wholesale_price: 5.90)
+    ]
+  end
 end

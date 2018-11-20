@@ -10,12 +10,12 @@ module InkindApi
         super(product)
         parameters = fixed_product_parameters product
 
-        @value             = parameters['product_value']
-        @local_value       = parameters['local_value']
-        @local_currency    = parameters['local_currency']
-        @wholesale_price   = parameters['wholesale_price']
-        @retail_price      = parameters['retail_price']
-        @fee               = parameters['fee']
+        @value           = parameters['product_value']
+        @local_value     = parameters['local_value']
+        @local_currency  = parameters['local_currency']
+        @wholesale_price = parameters['wholesale_price']
+        @retail_price    = parameters['retail_price']
+        @fee             = parameters['fee']
       end
 
       private

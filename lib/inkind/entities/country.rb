@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class Country
+    class Country < BaseEntity
       attr_accessor :id, :name
 
       def initialize(country)

@@ -25,6 +25,12 @@ module InkindApi
       def max_suggested_value_by(criterion)
         @suggested_values.max_by(&criterion)
       end
+
+      def meta_data
+        meta_data                     = super
+        meta_data['suggested_values'] = suggested_values.map(&:meta_data)
+        meta_data
+      end
     end
   end
 end

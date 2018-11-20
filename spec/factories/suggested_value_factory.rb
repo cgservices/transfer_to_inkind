@@ -15,4 +15,3 @@ FactoryBot.define do
     initialize_with { new({}) }
   end
 end
-

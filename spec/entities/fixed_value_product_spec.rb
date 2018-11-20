@@ -58,4 +58,26 @@ describe InkindApi::Entity::FixedValueProduct do
       end
     end
   end
+
+  describe '#meta_data' do
+    it 'returns the right metadata' do
+      expect(subject.meta_data).to eq(
+        'id' => 64,
+        'name' => '$14 Basic',
+        'short_description' => '14 USD Basic',
+        'operator' => { 'id' => 1959, 'name' => 'Claro TV Guatemala USD', 'country' => { 'id' => 756, 'name' => 'Guatemala' } },
+        'country' => { 'id' => 756, 'name' => 'Guatemala' },
+        'service' => { 'id' => 1, 'name' => 'television' },
+        'value' => 14,
+        'currency' => 'USD',
+        'local_value' => 14,
+        'local_currency' => 'USD',
+        'account_currency' => 'USD',
+        'wholesale_price' => 12.5,
+        'retail_price' => 13.5,
+        'fee' => 0,
+        'type' => nil
+      )
+    end
+  end
 end

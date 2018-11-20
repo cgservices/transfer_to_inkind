@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class Service
+    class Service < BaseEntity
       attr_accessor :id, :name
 
       def initialize(service)

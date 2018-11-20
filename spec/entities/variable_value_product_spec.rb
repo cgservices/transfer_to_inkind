@@ -47,7 +47,7 @@ describe InkindApi::Entity::VariableValueProduct do
     end
   end
 
-  describe 'min' do
+  describe '#min' do
     it 'should return the minimal retail_price' do
       subject.suggested_values = build_suggested_values
       expect(subject.min(:retail_price)).to eq 0.2
@@ -59,7 +59,7 @@ describe InkindApi::Entity::VariableValueProduct do
     end
   end
 
-  describe 'max' do
+  describe '#max' do
     it 'should return the maximal retail_price' do
       subject.suggested_values = build_suggested_values
       expect(subject.max(:retail_price)).to eq 10.00
@@ -68,6 +68,28 @@ describe InkindApi::Entity::VariableValueProduct do
     it 'should return the maximal wholesale_price' do
       subject.suggested_values = build_suggested_values
       expect(subject.max(:wholesale_price)).to eq 9.90
+    end
+  end
+
+  describe '#meta_data' do
+    it 'returns the right metadata' do
+      suggested_value          = InkindApi::Entity::SuggestedValue.new('local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0)
+      subject.suggested_values = [suggested_value]
+
+      expect(subject.meta_data).to eq(
+        'id' => 64,
+        'name' => '$14 Basic',
+        'short_description' => '14 USD Basic',
+        'operator' => { 'id' => 1959, 'name' => 'Claro TV Guatemala USD', 'country' => { 'id' => 756, 'name' => 'Guatemala' } },
+        'country' => { 'id' => 756, 'name' => 'Guatemala' },
+        'service' => { 'id' => 1, 'name' => 'television' },
+        'currency' => 'USD',
+        'account_currency' => 'USD',
+        'type' => nil,
+        'suggested_values' => [
+          { 'local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0 }
+        ]
+      )
     end
   end
 

@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class Product
+    class Product < BaseEntity
       attr_accessor :id, :name, :short_description,
                     :country, :operator, :service,
                     :currency, :account_currency, :type
@@ -20,6 +20,14 @@ module InkindApi
         @operator = Operator.new(product)
         @country  = Country.new(product)
         @service  = Service.new(product)
+      end
+
+      def meta_data
+        meta_data             = super
+        meta_data['operator'] = operator.meta_data
+        meta_data['service']  = service.meta_data
+        meta_data['country']  = country.meta_data
+        meta_data
       end
 
       private

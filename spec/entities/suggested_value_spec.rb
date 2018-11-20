@@ -32,4 +32,10 @@ describe InkindApi::Entity::SuggestedValue do
       end
     end
   end
+
+  describe '#meta_data' do
+    it 'returns the right meta_data' do
+      expect(subject.meta_data).to eq('local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0)
+    end
+  end
 end

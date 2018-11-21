@@ -18,6 +18,7 @@ tmp
 .DS_Store
 .rvmrc
 .idea/
+.env
 Gemfile.lock
 spec/credentials.txt
 spec/dummy/log/test.log

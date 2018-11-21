@@ -3,12 +3,12 @@
 module InkindApi
   module Entity
     class FixedValueProduct < Product
-      attr_accessor :value, :local_value, :local_currency,
-                    :wholesale_price, :retail_price, :fee
+      attr_reader :value, :local_value, :local_currency,
+                  :wholesale_price, :retail_price, :fee
 
-      def initialize(product)
-        super(product)
-        parameters = fixed_product_parameters product
+      def initialize(product_params)
+        super(product_params)
+        parameters = fixed_product_parameters product_params
 
         @value           = parameters['product_value']
         @local_value     = parameters['local_value']
@@ -20,9 +20,9 @@ module InkindApi
 
       private
 
-      def fixed_product_parameters(product)
-        product.slice('product_value', 'local_value', 'local_currency',
-                      'wholesale_price', 'retail_price', 'fee')
+      def fixed_product_parameters(product_params)
+        product_params.slice('product_value', 'local_value', 'local_currency',
+                             'wholesale_price', 'retail_price', 'fee')
       end
     end
   end

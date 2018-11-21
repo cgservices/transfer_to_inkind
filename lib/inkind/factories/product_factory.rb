@@ -22,7 +22,9 @@ module InkindApi
           raise StandardError.new, "This product type is not managed: #{type}"
         end
 
-        type.split('_')[2].singularize
+        raise "Product type not found #{type}" if type.split('_').empty?
+
+        type.split('_').to_a[2].to_s.singularize
       end
     end
   end

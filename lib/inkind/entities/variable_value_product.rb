@@ -5,8 +5,8 @@ module InkindApi
     class VariableValueProduct < Product
       attr_accessor :suggested_values
 
-      def initialize(product, suggested_values = [])
-        super(product)
+      def initialize(product_params, suggested_values = [])
+        super(product_params)
         @suggested_values = suggested_values
       end
 

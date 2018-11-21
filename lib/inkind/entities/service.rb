@@ -3,10 +3,10 @@
 module InkindApi
   module Entity
     class Service < BaseEntity
-      attr_accessor :id, :name
+      attr_reader :id, :name
 
-      def initialize(service)
-        parameters = service_parameters service
+      def initialize(service_params)
+        parameters = service_parameters service_params
 
         @id   = parameters['service_id']
         @name = parameters['service']
@@ -14,8 +14,8 @@ module InkindApi
 
       private
 
-      def service_parameters(service)
-        service.slice('service_id', 'service')
+      def service_parameters(service_params)
+        service_params.slice('service_id', 'service')
       end
     end
   end

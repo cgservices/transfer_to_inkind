@@ -72,8 +72,9 @@ describe InkindApi::Entity::VariableValueProduct do
   end
 
   describe '#meta_data' do
+    let(:suggested_value_params) { { 'local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0 } }
     it 'returns the right metadata' do
-      suggested_value          = InkindApi::Entity::SuggestedValue.new('local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0)
+      suggested_value          = InkindApi::Entity::SuggestedValue.new(suggested_value_params)
       subject.suggested_values = [suggested_value]
 
       expect(subject.meta_data).to eq(
@@ -86,9 +87,7 @@ describe InkindApi::Entity::VariableValueProduct do
         'currency' => 'USD',
         'account_currency' => 'USD',
         'type' => nil,
-        'suggested_values' => [
-          { 'local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0 }
-        ]
+        'suggested_values' => [suggested_value_params]
       )
     end
   end

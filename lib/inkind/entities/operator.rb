@@ -3,14 +3,14 @@
 module InkindApi
   module Entity
     class Operator < BaseEntity
-      attr_accessor :id, :name, :country
+      attr_reader :id, :name, :country
 
-      def initialize(operator)
-        parameters = operator_parameters operator
+      def initialize(operator_params)
+        parameters = operator_parameters operator_params
 
         @id      = parameters['operator_id']
         @name    = parameters['operator']
-        @country = Country.new(operator)
+        @country = Country.new(operator_params)
       end
 
       def meta_data
@@ -21,8 +21,8 @@ module InkindApi
 
       private
 
-      def operator_parameters(parameters)
-        parameters.slice('operator_id', 'operator')
+      def operator_parameters(operator_params)
+        operator_params.slice('operator_id', 'operator')
       end
     end
   end

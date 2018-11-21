@@ -2,10 +2,14 @@ language: ruby
 sudo: required
 rvm: 2.4.1
 
+env:
+  - TRANSFERT_TO_INKIND_API_KEY=''
+  - TRANSFERT_TO_INKIND_API_SECRET=''
+  - TRANSFERT_TO_INKIND_ENDPOINT='https://api.transferto.com/v1.1'
+
 cache:
   - bundler
 
 script:
   - bundle install
-  - cp .envtest .env
   - bundle exec rspec

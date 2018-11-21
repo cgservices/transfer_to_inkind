@@ -3,10 +3,10 @@
 module InkindApi
   module Entity
     class Country < BaseEntity
-      attr_accessor :id, :name
+      attr_reader :id, :name
 
-      def initialize(country)
-        parameters = country_parameters country
+      def initialize(country_params)
+        parameters = country_parameters country_params
 
         @id   = parameters['country_id']
         @name = parameters['country']
@@ -14,8 +14,8 @@ module InkindApi
 
       private
 
-      def country_parameters(country)
-        country.slice('country_id', 'country')
+      def country_parameters(country_params)
+        country_params.slice('country_id', 'country')
       end
     end
   end

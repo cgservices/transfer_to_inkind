@@ -13,43 +13,29 @@ module InkindApi
     end
 
     def services
-      services = []
       get 'services' do |json|
-        json['services'].each do |service|
-          services << Entity::Service.new(service)
-        end
+        json['services'].map { |service| Entity::Service.new(service) }
       end
-      services
     end
 
     def countries
-      countries = []
       get 'countries' do |json|
-        json['countries'].each do |country|
-          countries << Entity::Country.new(country)
-        end
+        json['countries'].map { |country| Entity::Country.new(country) }
       end
-      countries
     end
 
     def operators
-      operators = []
       get 'operators' do |json|
-        json['operators'].each do |operator|
-          operators << Entity::Operator.new(operator)
-        end
+        json['operators'].map { |operator| Entity::Operator.new(operator) }
       end
-      operators
     end
 
     def products(operator_id = nil)
+      return products_per_operator operator_id unless operator_id.nil?
+
       products = []
-      if operator_id.nil?
-        operators.each do |operator|
-          products += products_per_operator operator.id
-        end
-      else
-        products += products_per_operator operator_id
+      operators.each do |operator|
+        products += products_per_operator operator.id
       end
       products
     end
@@ -58,17 +44,19 @@ module InkindApi
 
     def get(url)
       conn     = Faraday.new(url: @config.base_url)
-      response = conn.get url do |req|
-        req.headers['X-TransferTo-Nonce']  = (Time.now.to_f * 1000).to_s
-        req.headers['X-TransferTo-Hmac']   = calculate_hmac(req.headers['X-TransferTo-Nonce'])
-        req.headers['X-TransferTo-Apikey'] = @config.api_key
-      end
-
-      json = JSON.parse(response.body)
+      response = conn.get(url, nil, authentication_headers)
+      json     = JSON.parse(response.body)
       capture_error json
       yield json
-    rescue StandardError => e
-      p e
+    end
+
+    def authentication_headers
+      nonce = (Time.now.to_f * 1000).to_s
+      {
+        'X-TransferTo-Nonce' => nonce,
+        'X-TransferTo-Hmac' => calculate_hmac(nonce),
+        'X-TransferTo-Apikey' => @config.api_key
+      }
     end
 
     def calculate_hmac(nonce)
@@ -101,13 +89,9 @@ module InkindApi
     end
 
     def suggested_values(product_id)
-      suggested_values = []
       get "product/variable_value_recharges/#{product_id}/suggested_values" do |json|
-        json['suggested_values'].each do |suggested_value|
-          suggested_values << Entity::SuggestedValue.new(suggested_value)
-        end
+        json['suggested_values'].map { |suggested_value| Entity::SuggestedValue.new(suggested_value) }
       end
-      suggested_values
     end
   end
 end

@@ -19,6 +19,7 @@ tmp
 .rvmrc
 .idea/
 .env*
+!.envtest
 Gemfile.lock
 spec/credentials.txt
 spec/dummy/log/test.log

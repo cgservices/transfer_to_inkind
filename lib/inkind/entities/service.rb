@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class Service < BaseEntity
+    class Service < Base
       attr_reader :id, :name
 
       def initialize(service_params)

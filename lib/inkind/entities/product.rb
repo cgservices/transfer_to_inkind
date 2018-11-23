@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class Product < BaseEntity
+    class Product < Base
       attr_reader :id, :name, :short_description,
                   :country, :operator, :service,
                   :currency, :account_currency, :type

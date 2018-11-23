@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class BaseEntity
+    class Base
       def meta_data
         instance_variables.map { |var| [var.to_s.delete('@'), instance_variable_get(var)] }.to_h
       end

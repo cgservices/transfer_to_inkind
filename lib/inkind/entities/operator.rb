@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class Operator < BaseEntity
+    class Operator < Base
       attr_reader :id, :name, :country
 
       def initialize(operator_params)

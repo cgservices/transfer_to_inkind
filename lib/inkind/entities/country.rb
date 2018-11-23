@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class Country < BaseEntity
+    class Country < Base
       attr_reader :id, :name
 
       def initialize(country_params)

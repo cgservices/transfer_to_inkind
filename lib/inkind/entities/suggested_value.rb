@@ -2,7 +2,7 @@
 
 module InkindApi
   module Entity
-    class SuggestedValue < BaseEntity
+    class SuggestedValue < Base
       attr_accessor :local_value,
                     :local_currency,
                     :name,

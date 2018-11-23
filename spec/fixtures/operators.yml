@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.14.0
+      - Faraday v0.15.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,49 +20,32 @@ http_interactions:
     headers:
       Cache-Control:
       - no-cache, no-store, must-revalidate
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 24 Jan 2018 14:48:47 GMT
+      - Fri, 23 Nov 2018 07:25:32 GMT
       Expires:
       - '0'
       Pragma:
       - no-cache
       Server:
-      - Perl Dancer 1.3136
+      - nginx
+      Strict-Transport-Security:
+      - max-age=15768000
       Vary:
       - Accept-Encoding
-      X-Powered-By:
-      - Perl Dancer 1.3136
+      X-Content-Type-Options:
+      - nosniff
       Content-Length:
-      - '2187'
+      - '1937'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"operators":[{"operator_id":1707,"operator":"9Mobile Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":1437,"operator":"Aircel
-        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":1428,"operator":"Aircel
-        Assam India","country_id":766,"country":"India"},{"operator_id":1425,"operator":"Aircel
-        Bihar India","country_id":766,"country":"India"},{"operator_id":1376,"operator":"Aircel
-        Chennai India","country_id":766,"country":"India"},{"operator_id":1432,"operator":"Aircel
-        Delhi India","country_id":766,"country":"India"},{"operator_id":2202,"operator":"Aircel
-        Gujarat India","country_id":766,"country":"India"},{"operator_id":759,"operator":"Aircel
-        Haryana India","country_id":766,"country":"India"},{"operator_id":1430,"operator":"Aircel
-        HP India","country_id":766,"country":"India"},{"operator_id":1431,"operator":"Aircel
-        JK India","country_id":766,"country":"India"},{"operator_id":1438,"operator":"Aircel
-        Karnataka India","country_id":766,"country":"India"},{"operator_id":1436,"operator":"Aircel
-        Kerala India","country_id":766,"country":"India"},{"operator_id":1378,"operator":"Aircel
-        Kolkata India","country_id":766,"country":"India"},{"operator_id":1450,"operator":"Aircel
-        Maharashtra India","country_id":766,"country":"India"},{"operator_id":1433,"operator":"Aircel
-        Mumbai India","country_id":766,"country":"India"},{"operator_id":1429,"operator":"Aircel
-        North East India","country_id":766,"country":"India"},{"operator_id":1427,"operator":"Aircel
-        Orissa India","country_id":766,"country":"India"},{"operator_id":1910,"operator":"Aircel
-        Punjab India","country_id":766,"country":"India"},{"operator_id":1912,"operator":"Aircel
-        Rajasthan India","country_id":766,"country":"India"},{"operator_id":1377,"operator":"Aircel
-        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":1434,"operator":"Aircel
-        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":1435,"operator":"Aircel
-        Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":1426,"operator":"Aircel
-        West Bengal India","country_id":766,"country":"India"},{"operator_id":2184,"operator":"Airtel
+      string: '{"operators":[{"operator_id":1707,"operator":"9Mobile Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":1425,"operator":"Aircel
+        Bihar India","country_id":766,"country":"India"},{"operator_id":2184,"operator":"Airtel
         Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2217,"operator":"Airtel
         Assam India","country_id":766,"country":"India"},{"operator_id":1449,"operator":"Airtel
         Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":2185,"operator":"Airtel
@@ -75,9 +58,9 @@ http_interactions:
         Jammu and Kashmir India","country_id":766,"country":"India"},{"operator_id":2222,"operator":"Airtel
         Karnataka India","country_id":766,"country":"India"},{"operator_id":2223,"operator":"Airtel
         Kerala India","country_id":766,"country":"India"},{"operator_id":2224,"operator":"Airtel
-        Kolkata India","country_id":766,"country":"India"},{"operator_id":2188,"operator":"Airtel
-        Maharashtra India","country_id":766,"country":"India"},{"operator_id":2225,"operator":"Airtel
-        MP and Chattisgarh India","country_id":766,"country":"India"},{"operator_id":2189,"operator":"Airtel
+        Kolkata India","country_id":766,"country":"India"},{"operator_id":2225,"operator":"Airtel
+        MP and Chattisgarh India","country_id":766,"country":"India"},{"operator_id":2188,"operator":"Airtel
+        Maharashtra India","country_id":766,"country":"India"},{"operator_id":2189,"operator":"Airtel
         Mumbai India","country_id":766,"country":"India"},{"operator_id":1537,"operator":"Airtel
         Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":2226,"operator":"Airtel
         North East India","country_id":766,"country":"India"},{"operator_id":2227,"operator":"Airtel
@@ -88,48 +71,43 @@ http_interactions:
         UP West and Uttarakhand India","country_id":766,"country":"India"},{"operator_id":2192,"operator":"Airtel
         Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":2230,"operator":"Airtel
         West Bengal India","country_id":766,"country":"India"},{"operator_id":1411,"operator":"Axis
-        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":1447,"operator":"Banglalink
-        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":2431,"operator":"BPJS
-        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2456,"operator":"Bsnl
-        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2457,"operator":"Bsnl
-        Assam India","country_id":766,"country":"India"},{"operator_id":2460,"operator":"Bsnl
-        Bihar and Jharkhand India","country_id":766,"country":"India"},{"operator_id":2461,"operator":"Bsnl
-        Chennai India","country_id":766,"country":"India"},{"operator_id":2463,"operator":"Bsnl
-        Gujarat India","country_id":766,"country":"India"},{"operator_id":2464,"operator":"Bsnl
-        Haryana India","country_id":766,"country":"India"},{"operator_id":2465,"operator":"Bsnl
-        Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2466,"operator":"Bsnl
-        Jammu and Kashmir India","country_id":766,"country":"India"},{"operator_id":2467,"operator":"Bsnl
-        Karnataka India","country_id":766,"country":"India"},{"operator_id":2468,"operator":"Bsnl
-        Kerala India","country_id":766,"country":"India"},{"operator_id":2469,"operator":"Bsnl
-        Kolkata Metro India","country_id":766,"country":"India"},{"operator_id":2470,"operator":"Bsnl
-        Madhya Pradesh and Chhattisgarh India","country_id":766,"country":"India"},{"operator_id":2471,"operator":"Bsnl
-        Maharashtra India","country_id":766,"country":"India"},{"operator_id":2473,"operator":"Bsnl
-        North East India India","country_id":766,"country":"India"},{"operator_id":2474,"operator":"Bsnl
-        Orissa India","country_id":766,"country":"India"},{"operator_id":2475,"operator":"Bsnl
-        Punjab India","country_id":766,"country":"India"},{"operator_id":2476,"operator":"Bsnl
-        Rajasthan India","country_id":766,"country":"India"},{"operator_id":2477,"operator":"Bsnl
-        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2478,"operator":"Bsnl
-        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":2479,"operator":"Bsnl
-        Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":2480,"operator":"Bsnl
-        West Bengal India","country_id":766,"country":"India"},{"operator_id":1726,"operator":"CellC
-        South Africa","country_id":868,"country":"South Africa"},{"operator_id":2453,"operator":"Claro
-        El Salvador USD","country_id":730,"country":"El Salvador"},{"operator_id":1581,"operator":"Claro
-        Guatemala USD","country_id":756,"country":"Guatemala"},{"operator_id":1584,"operator":"Claro
-        Honduras USD","country_id":762,"country":"Honduras"},{"operator_id":1590,"operator":"Claro
-        Nicaragua USD","country_id":824,"country":"Nicaragua"},{"operator_id":1959,"operator":"Claro
-        TV Guatemala USD","country_id":756,"country":"Guatemala"},{"operator_id":177,"operator":"Digicel
-        El Salvador","country_id":730,"country":"El Salvador"},{"operator_id":1808,"operator":"DTH
+        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2431,"operator":"BPJS
+        Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2456,"operator":"BSNL
+        Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2457,"operator":"BSNL
+        Assam India","country_id":766,"country":"India"},{"operator_id":2460,"operator":"BSNL
+        Bihar and Jharkhand India","country_id":766,"country":"India"},{"operator_id":2461,"operator":"BSNL
+        Chennai India","country_id":766,"country":"India"},{"operator_id":2463,"operator":"BSNL
+        Gujarat India","country_id":766,"country":"India"},{"operator_id":2464,"operator":"BSNL
+        Haryana India","country_id":766,"country":"India"},{"operator_id":2465,"operator":"BSNL
+        Himachal Pradesh India","country_id":766,"country":"India"},{"operator_id":2466,"operator":"BSNL
+        Jammu and Kashmir India","country_id":766,"country":"India"},{"operator_id":2467,"operator":"BSNL
+        Karnataka India","country_id":766,"country":"India"},{"operator_id":2468,"operator":"BSNL
+        Kerala India","country_id":766,"country":"India"},{"operator_id":2469,"operator":"BSNL
+        Kolkata Metro India","country_id":766,"country":"India"},{"operator_id":2470,"operator":"BSNL
+        Madhya Pradesh and Chhattisgarh India","country_id":766,"country":"India"},{"operator_id":2471,"operator":"BSNL
+        Maharashtra India","country_id":766,"country":"India"},{"operator_id":2473,"operator":"BSNL
+        North East India India","country_id":766,"country":"India"},{"operator_id":2474,"operator":"BSNL
+        Orissa India","country_id":766,"country":"India"},{"operator_id":2475,"operator":"BSNL
+        Punjab India","country_id":766,"country":"India"},{"operator_id":2476,"operator":"BSNL
+        Rajasthan India","country_id":766,"country":"India"},{"operator_id":2477,"operator":"BSNL
+        Tamil Nadu India","country_id":766,"country":"India"},{"operator_id":2478,"operator":"BSNL
+        Uttar Pradesh East India","country_id":766,"country":"India"},{"operator_id":2479,"operator":"BSNL
+        Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":2480,"operator":"BSNL
+        West Bengal India","country_id":766,"country":"India"},{"operator_id":1447,"operator":"Banglalink
+        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":1726,"operator":"CellC
+        South Africa","country_id":868,"country":"South Africa"},{"operator_id":1959,"operator":"Claro
+        TV Guatemala USD","country_id":756,"country":"Guatemala"},{"operator_id":1808,"operator":"DTH
         Airtel India","country_id":766,"country":"India"},{"operator_id":1804,"operator":"DTH
         Dish TV India","country_id":766,"country":"India"},{"operator_id":1903,"operator":"DTH
         Plan Cignal-TV Philippines","country_id":840,"country":"Philippines"},{"operator_id":1805,"operator":"DTH
         Reliance BIG TV India","country_id":766,"country":"India"},{"operator_id":1806,"operator":"DTH
         Sun Direct India","country_id":766,"country":"India"},{"operator_id":1809,"operator":"DTH
         Tata-Sky India","country_id":766,"country":"India"},{"operator_id":1807,"operator":"DTH
-        Videocon India","country_id":766,"country":"India"},{"operator_id":2061,"operator":"Farmacias
-        Cruz Verde Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":2011,"operator":"Generika
-        Philippines","country_id":840,"country":"Philippines"},{"operator_id":246,"operator":"Globe
-        Telecom Philippines","country_id":840,"country":"Philippines"},{"operator_id":1612,"operator":"Glo
-        Mobile Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":249,"operator":"GrameenPhone
+        Videocon India","country_id":766,"country":"India"},{"operator_id":177,"operator":"Digicel
+        El Salvador","country_id":730,"country":"El Salvador"},{"operator_id":2061,"operator":"Farmacias
+        Cruz Verde Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":1612,"operator":"Glo
+        Mobile Nigeria","country_id":826,"country":"Nigeria"},{"operator_id":246,"operator":"Globe
+        Telecom Philippines","country_id":840,"country":"Philippines"},{"operator_id":249,"operator":"GrameenPhone
         Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":2193,"operator":"IDEA
         Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2231,"operator":"IDEA
         Assam India","country_id":766,"country":"India"},{"operator_id":2194,"operator":"IDEA
@@ -154,10 +132,10 @@ http_interactions:
         Uttar Pradesh West India","country_id":766,"country":"India"},{"operator_id":2243,"operator":"IDEA
         West Bengal India","country_id":766,"country":"India"},{"operator_id":1312,"operator":"Indosat
         Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2060,"operator":"La
-        Torre Supermercados Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":2244,"operator":"MTNL
+        Torre Supermercados Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":1724,"operator":"MTN
+        South Africa","country_id":868,"country":"South Africa"},{"operator_id":2244,"operator":"MTNL
         Delhi India","country_id":766,"country":"India"},{"operator_id":2245,"operator":"MTNL
-        Mumbai India","country_id":766,"country":"India"},{"operator_id":1724,"operator":"MTN
-        South Africa","country_id":868,"country":"South Africa"},{"operator_id":511,"operator":"Ooredoo
+        Mumbai India","country_id":766,"country":"India"},{"operator_id":511,"operator":"Ooredoo
         Qatar","country_id":844,"country":"Qatar"},{"operator_id":1671,"operator":"PLN
         Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":2267,"operator":"Reliance
         GSM Andhra Pradesh India","country_id":766,"country":"India"},{"operator_id":2268,"operator":"Reliance
@@ -183,8 +161,8 @@ http_interactions:
         GSM UP East India","country_id":766,"country":"India"},{"operator_id":2288,"operator":"Reliance
         GSM UP West India","country_id":766,"country":"India"},{"operator_id":2289,"operator":"Reliance
         GSM West Bengal India","country_id":766,"country":"India"},{"operator_id":1446,"operator":"Robi
-        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":1934,"operator":"Smartbro
-        Philippines","country_id":840,"country":"Philippines"},{"operator_id":570,"operator":"Smart
+        Bangladesh","country_id":678,"country":"Bangladesh"},{"operator_id":570,"operator":"Smart
+        Philippines","country_id":840,"country":"Philippines"},{"operator_id":1934,"operator":"Smartbro
         Philippines","country_id":840,"country":"Philippines"},{"operator_id":1311,"operator":"Sun
         Philippines","country_id":840,"country":"Philippines"},{"operator_id":2166,"operator":"Super
         Selectos El Salvador","country_id":730,"country":"El Salvador"},{"operator_id":2203,"operator":"Tata
@@ -230,8 +208,7 @@ http_interactions:
         Telecom Indonesia","country_id":767,"country":"Indonesia"},{"operator_id":1505,"operator":"Tigo
         El Salvador","country_id":730,"country":"El Salvador"},{"operator_id":1605,"operator":"Tigo
         Guatemala USD","country_id":756,"country":"Guatemala"},{"operator_id":2214,"operator":"Tigo
-        TV Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":1960,"operator":"TUC
-        Nicaragua","country_id":824,"country":"Nicaragua"},{"operator_id":2326,"operator":"Videocon
+        TV Guatemala","country_id":756,"country":"Guatemala"},{"operator_id":2326,"operator":"Videocon
         Punjab India","country_id":766,"country":"India"},{"operator_id":1923,"operator":"Viva
         DR DTH","country_id":725,"country":"Dominican Republic"},{"operator_id":712,"operator":"Vodacom
         South Africa","country_id":868,"country":"South Africa"},{"operator_id":1381,"operator":"Vodafone
@@ -260,5 +237,5 @@ http_interactions:
         West Bengal India","country_id":766,"country":"India"},{"operator_id":215,"operator":"XL
         Indonesia","country_id":767,"country":"Indonesia"}]}'
     http_version: 
-  recorded_at: Wed, 24 Jan 2018 14:48:48 GMT
+  recorded_at: Fri, 23 Nov 2018 07:25:33 GMT
 recorded_with: VCR 4.0.0

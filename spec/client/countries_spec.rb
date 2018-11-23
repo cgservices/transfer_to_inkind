@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe InkindApi::Client do
+  subject { described_class.new(config: InkindApi::Config.new) }
+
   it 'can retrieve countries' do
     expect(InkindApi::Entity::Country)
       .to receive(:new)
@@ -10,7 +10,7 @@ describe InkindApi::Client do
       .and_call_original
 
     VCR.use_cassette('countries') do
-      expect(CLIENT.countries.size).to be > 0
+      expect(subject.countries.size).to be > 0
     end
   end
 end

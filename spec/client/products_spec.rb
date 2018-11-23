@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe InkindApi::Client do
+  subject { described_class.new(config: InkindApi::Config.new) }
   it 'can retrieve products for operators' do
     expect(InkindApi::Entity::Operator)
       .to receive(:new)
@@ -22,7 +21,7 @@ describe InkindApi::Client do
       .and_call_original
 
     VCR.use_cassette('products') do
-      expect(CLIENT.products.size).to be > 0
+      expect(subject.products.size).to be > 0
     end
   end
 
@@ -39,10 +38,10 @@ describe InkindApi::Client do
       .to receive(:new)
       .at_least(:once)
 
-    operator = VCR.use_cassette('operators') { CLIENT.operators.first }
+    operator = VCR.use_cassette('operators') { subject.operators.first }
 
     VCR.use_cassette('products') do
-      expect(CLIENT.products(operator.id).size).to be > 0
+      expect(subject.products(operator.id).size).to be > 0
     end
   end
 end

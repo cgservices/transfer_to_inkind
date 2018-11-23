@@ -14,8 +14,9 @@ require 'yaml'
 require 'vcr'
 require 'factory_bot'
 require 'faker'
+require 'dotenv'
 
-CLIENT = InkindApi::Client.new
+Dotenv.load
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures'

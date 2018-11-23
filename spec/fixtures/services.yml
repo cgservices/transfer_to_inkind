@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.14.0
+      - Faraday v0.15.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,25 +20,29 @@ http_interactions:
     headers:
       Cache-Control:
       - no-cache, no-store, must-revalidate
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 24 Jan 2018 14:48:46 GMT
+      - Fri, 23 Nov 2018 07:25:01 GMT
       Expires:
       - '0'
       Pragma:
       - no-cache
       Server:
-      - Perl Dancer 1.3136
-      X-Powered-By:
-      - Perl Dancer 1.3136
+      - nginx
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Content-Type-Options:
+      - nosniff
       Content-Length:
-      - '291'
+      - '247'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"services":[{"service_id":1,"service":"television"},{"service_id":2,"service":"grocery"},{"service_id":3,"service":"pharmacy"},{"service_id":4,"service":"transportation"},{"service_id":6,"service":"electricity"},{"service_id":7,"service":"bundles"},{"service_id":14,"service":"insurance"}]}'
+      string: '{"services":[{"service_id":1,"service":"television"},{"service_id":2,"service":"grocery"},{"service_id":3,"service":"pharmacy"},{"service_id":6,"service":"electricity"},{"service_id":7,"service":"bundles"},{"service_id":14,"service":"insurance"}]}'
     http_version: 
-  recorded_at: Wed, 24 Jan 2018 14:48:46 GMT
+  recorded_at: Fri, 23 Nov 2018 07:27:20 GMT
 recorded_with: VCR 4.0.0

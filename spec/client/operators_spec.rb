@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe InkindApi::Client do
+  subject { described_class.new(config: InkindApi::Config.new) }
+
   it 'can retrieve operators' do
     expect(InkindApi::Entity::Operator)
       .to receive(:new)
@@ -12,8 +12,9 @@ describe InkindApi::Client do
       .to receive(:new)
       .at_least(:once)
       .and_call_original
+
     VCR.use_cassette('operators') do
-      expect(CLIENT.operators.size).to be > 0
+      expect(subject.operators.size).to be > 0
     end
   end
 end

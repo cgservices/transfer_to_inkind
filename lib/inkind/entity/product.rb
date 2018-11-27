@@ -11,7 +11,7 @@ module InkindApi
         parameters = product_parameters product_params
 
         @id                = parameters['product_id']
-        @name              = parameters['product_name']
+        @name              = parameters['product_name'] || parameters['product']
         @short_description = parameters['product_short_desc']
         @currency          = parameters['product_currency']
         @account_currency  = parameters['account_currency']
@@ -36,7 +36,7 @@ module InkindApi
         product_params.slice('product_id', 'product_name', 'product_short_desc',
                              'operator_id', 'operator', 'country_id', 'country',
                              'service_id', 'service',
-                             'product_currency', 'account_currency', 'type')
+                             'product_currency', 'account_currency', 'type', 'product')
       end
     end
   end

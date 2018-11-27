@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_dependency('activemodel', ['~> 5.2', '>= 5.2.1'])
+  gem.add_dependency('activemodel', '4.2.10')
   gem.add_dependency 'faraday'
   gem.add_dependency 'json'
 
@@ -32,7 +32,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'pry-stack_explorer'
   gem.add_development_dependency('rake', ['>= 0'])
   gem.add_development_dependency('rspec', ['>= 0'])
-  gem.add_development_dependency('rspec-rails', ['>= 0'])
   gem.add_development_dependency 'simplecov'
   gem.add_development_dependency('sqlite3', ['>= 0'])
   gem.add_development_dependency 'vcr'

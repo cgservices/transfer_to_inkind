@@ -1,16 +1,28 @@
+# frozen_string_literal: true
+
 module InkindApi
   module Entity
-    class Operator
+    class Operator < Base
+      attr_reader :id, :name, :country
 
-      attr_accessor :id, :name, :country
+      def initialize(operator_params)
+        parameters = operator_parameters operator_params
 
-      def initialize(operator)
-        @id = operator['service_id']
-        @name = operator['service']
-        @country = Country.new(
-          country_id: operator['country_id'],
-          country: operator['country']
-        )
+        @id      = parameters['operator_id']
+        @name    = parameters['operator']
+        @country = Country.new(operator_params)
+      end
+
+      def meta_data
+        meta_data            = super
+        meta_data['country'] = country.meta_data
+        meta_data
+      end
+
+      private
+
+      def operator_parameters(operator_params)
+        operator_params.slice('operator_id', 'operator')
       end
     end
   end

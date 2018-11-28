@@ -1,12 +1,21 @@
+# frozen_string_literal: true
+
 module InkindApi
   module Entity
-    class Service
+    class Service < Base
+      attr_reader :id, :name
 
-      attr_accessor :id, :name
+      def initialize(service_params)
+        parameters = service_parameters service_params
 
-      def initialize(service)
-        @id = service['service_id']
-        @name = service['service']
+        @id   = parameters['service_id']
+        @name = parameters['service']
+      end
+
+      private
+
+      def service_parameters(service_params)
+        service_params.slice('service_id', 'service')
       end
     end
   end

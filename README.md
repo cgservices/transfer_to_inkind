@@ -18,19 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-    @inkind_client = InkindApi::Client.new(
-      endpoint: 'https://api.transferto.com/v1.1',
-      api_key: '<YOUR-VERY-SPECIAL-API-KEY>',
-      api_secret: '<YOUR-VERY-SECRET-API-SECRET>'
-    )
+    @inkind_client = InkindApi::Client.new(config: InkindApi::Config.new)
 
 ## Integration testing
 
-Create a config.yml in the root directory of the project with the test credentials:
+Create a .env in the root directory of the project with the test credentials:
 
-    endpoint: https://api.transferto.com/v1.1
-    api_key: <YOUR-VERY-SPECIAL-API-KEY>
-    api_secret: <YOUR-VERY-SECRET-API-SECRET>
+    TRANSFER_TO_INKIND_ENDPOINT= https://api.transferto.com/v1.1
+    TRANSFER_TO_INKIND_API_KEY= <YOUR-VERY-SPECIAL-API-KEY>
+    TRANSFER_TO_INKIND_API_SECRET= <YOUR-VERY-SECRET-API-SECRET>
 
 Remove any recorded VCR cassettes from the ./spec/fixtures directory if necessary and run:
 

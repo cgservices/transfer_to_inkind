@@ -60,7 +60,7 @@ describe InkindApi::Factory::Product do
 
     context 'with anything else' do
       it 'should raise an error' do
-        expect { described_class.get_product_type('foo') }.to raise_error StandardError
+        expect(described_class.get_product_type('foo')).to be nil
       end
     end
   end

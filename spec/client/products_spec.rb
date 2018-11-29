@@ -41,7 +41,7 @@ describe InkindApi::Client do
     operator = VCR.use_cassette('operators') { subject.operators.first }
 
     VCR.use_cassette('products') do
-      expect(subject.products(operator.id).size).to be > 0
+      expect(subject.products(operator_id: operator.id).size).to be > 0
     end
   end
 end

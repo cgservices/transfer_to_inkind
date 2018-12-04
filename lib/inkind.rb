@@ -28,7 +28,8 @@ module InkindApi
 end
 
 require 'inkind/version'
-require 'inkind/exception'
+require 'inkind/connection_exception'
+require 'inkind/command_exception'
 require 'inkind/client'
 require 'inkind/request/base'
 require 'inkind/request/discovery'

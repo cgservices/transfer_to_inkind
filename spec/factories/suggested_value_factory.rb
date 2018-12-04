@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :suggested_value, class: InkindApi::Entity::SuggestedValue do
-    local_value { Faker::Number.decimal(2) }
+    local_value { Faker::Number.number(2) }
     local_currency { Faker::Currency.code }
     name { Faker::Lorem.word }
     description { Faker::Lorem.sentence }

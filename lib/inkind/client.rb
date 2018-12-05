@@ -30,6 +30,10 @@ module InkindApi
       request(:transaction).fixed_value_voucher(attributes: parameters)
     end
 
+    def transaction_status(type, ext_transaction_id)
+      request(:transaction).status(type, ext_transaction_id)
+    end
+
     private
 
     def request(type)

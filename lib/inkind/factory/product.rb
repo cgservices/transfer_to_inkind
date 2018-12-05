@@ -3,17 +3,18 @@
 module InkindApi
   module Factory
     class Product
-      def self.create(type, product_data, suggested_values = [])
+      SUPPORTED_TYPES = %w[fixed_value_recharges fixed_value_vouchers variable_value_recharges].freeze
 
+      def self.create(type, product_data, suggested_values = [])
         product_data['type'] = get_product_type(type)
 
         case type
         when 'fixed_value_vouchers', 'fixed_value_recharges'
           return Entity::FixedValueProduct.new product_data
-        when 'variable_value_payments', 'variable_value_recharges'
+        when 'variable_value_recharges'
           return Entity::VariableValueProduct.new(product_data, suggested_values)
         else
-          raise StandardError.new, "This product type is not supported: #{type}"
+          raise StandardError.new, "Non supported product type: #{type}"
         end
       end
 
@@ -22,7 +23,7 @@ module InkindApi
       end
 
       def self.type_supported?(type)
-        %w[fixed_value_recharges fixed_value_vouchers variable_value_recharges variable_value_payments].include?(type)
+        SUPPORTED_TYPES.include?(type)
       end
     end
   end

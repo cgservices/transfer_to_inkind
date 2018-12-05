@@ -2,41 +2,41 @@ module InkindApi
   class ResponseException < StandardError
     def initialize(code, message, raw_response)
       case code
-      when 1000777
+      when 1_000_777
         raise InsufficientBalanceMasterAccount.new(code, message, raw_response)
-      when 1000888
+      when 1_000_888
         raise InsufficientBalanceRetailerAccount.new(code, message, raw_response)
-      when 1000999
+      when 1_000_999
         raise InvalidParameter.new(code, message, raw_response)
-      when 1000204
+      when 1_000_204
         raise AccountNumberIncorrect.new(code, message, raw_response)
-      when 1000207
+      when 1_000_207
         raise TransactionAmountLimitExceeded.new(code, message, raw_response)
-      when 1000212
+      when 1_000_212
         raise TransactionAlreadyPaid.new(code, message, raw_response)
-      when 1000213
+      when 1_000_213
         raise TransactionRepeated.new(code, message, raw_response)
-      when 1000214
+      when 1_000_214
         raise TransactionRejected.new(code, message, raw_response)
-      when 1000218
+      when 1_000_218
         raise TransactionTimeout.new(code, message, raw_response)
-      when 1000230
+      when 1_000_230
         raise RecipientReachedMaximumTransactionNumber.new(code, message, raw_response)
-      when 1000301
+      when 1_000_301
         raise ProductNotAvailable.new(code, message, raw_response)
-      when 1000302
+      when 1_000_302
         raise ProductNotCompatibleWithTransactionType.new(code, message, raw_response)
-      when 1000303
+      when 1_000_303
         raise ProductTypeIncorrect.new(code, message, raw_response)
-      when 1000304
+      when 1_000_304
         raise AccountVerificationNotAvailableForThisProduct.new(code, message, raw_response)
-      when 1000990
+      when 1_000_990
         raise ExternalIdAlreadyUsed.new(code, message, raw_response)
-      when 1000401
+      when 1_000_401
         raise Unauthorized.new(code, message, raw_response)
-      when 1000404
+      when 1_000_404
         raise TransactionNotFound.new(code, message, raw_response)
-      when 1000500
+      when 1_000_500
         raise InternalServerError.new(code, message, raw_response)
       else
         raise UnmappedResponse.new(code, message, raw_response)

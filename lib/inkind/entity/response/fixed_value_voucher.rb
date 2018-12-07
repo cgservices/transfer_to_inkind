@@ -4,7 +4,7 @@ module InkindApi
       class FixedValueVoucher < ::InkindApi::Entity::Base
         attr_reader :transaction_id, :simulation, :status, :status_message, :date, :account_number, :external_id,
                     :operator_reference, :product, :sender, :recipient, :sender_sms_notification, :sender_sms_text,
-                    :recipient_sms_notification, :recipient_sms_text
+                    :recipient_sms_notification, :recipient_sms_text, :voucher
 
         def initialize(parameters = {})
           attributes = filter_parameters parameters

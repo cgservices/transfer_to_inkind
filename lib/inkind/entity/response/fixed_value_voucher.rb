@@ -6,7 +6,7 @@ module InkindApi
                     :operator_reference, :product, :sender, :recipient, :sender_sms_notification, :sender_sms_text,
                     :recipient_sms_notification, :recipient_sms_text
 
-        def initialize(parameters)
+        def initialize(parameters = {})
           attributes = filter_parameters parameters
 
           @simulation                 = attributes['simulation']
@@ -22,9 +22,9 @@ module InkindApi
           @sender_sms_text            = attributes['sender_sms_text']
           @recipient_sms_notification = attributes['recipient_sms_notification']
           @recipient_sms_text         = attributes['recipient_sms_text']
-          @sender                     = Customer.new(attributes['sender'])
-          @recipient                  = Customer.new(attributes['recipient'])
-          @voucher                    = Voucher.new(parameters)
+          @sender                     = Customer.new(attributes.fetch('sender', {}))
+          @recipient                  = Customer.new(attributes.fetch('recipient', {}))
+          @voucher                    = Voucher.new(attributes.fetch('voucher', {}))
         end
 
         def meta_data
@@ -41,7 +41,7 @@ module InkindApi
         def filter_parameters(parameters)
           parameters.slice('account_number', 'external_id', 'simulation', 'sender_sms_notification',
                            'sender_sms_text', 'recipient_sms_notification', 'recipient_sms_text', 'sender', 'recipient',
-                           'status', 'status_message', 'date', 'product', 'transaction_id', 'operator_reference')
+                           'status', 'status_message', 'date', 'product', 'transaction_id', 'operator_reference', 'voucher')
         end
       end
     end

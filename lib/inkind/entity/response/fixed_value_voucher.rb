@@ -17,7 +17,7 @@ module InkindApi
           @status_message             = attributes['status_message']
           @date                       = attributes['date']
           @operator_reference         = attributes['operator_reference']
-          @product                    = InkindApi::Factory::Product.create('fixed_value_vouchers', parameters)
+          @product                    = InkindApi::Factory::Entity::Product.create('fixed_value_vouchers', parameters)
           @sender_sms_notification    = attributes['sender_sms_notification']
           @sender_sms_text            = attributes['sender_sms_text']
           @recipient_sms_notification = attributes['recipient_sms_notification']

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Factory::Product do
+describe InkindApi::Factory::Entity::Product do
   describe '.create' do
     context 'with a fixed_value_voucher product' do
       it 'returns a FixedValueProduct' do

@@ -7,11 +7,11 @@ module InkindApi
         def self.create(type, response_data)
           case type.to_s
           when 'fixed_value_vouchers'
-            return InkindApi::Entity::Request::FixedValueVoucher.new(response_data)
+            InkindApi::Entity::Request::FixedValueVoucher.new(response_data)
           when 'fixed_value_recharges'
-            return InkindApi::Entity::Request::FixedValueRecharge.new(response_data)
-          # when 'variable_value_recharges'
-          #   return InkindApi::Entity::Response::VariableValueProduct.new(response_data)
+            InkindApi::Entity::Request::FixedValueRecharge.new(response_data)
+          when 'variable_value_recharges'
+            InkindApi::Entity::Request::VariableValueRecharge.new(response_data)
           else
             raise StandardError.new, "Non supported request type: #{type}"
           end

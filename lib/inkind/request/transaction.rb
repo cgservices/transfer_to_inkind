@@ -9,6 +9,10 @@ module InkindApi
         perform_transaction(:fixed_value_recharges, attributes)
       end
 
+      def variable_value_recharge(attributes:)
+        perform_transaction(:variable_value_recharges, attributes)
+      end
+
       def status(type, ext_transaction_id)
         raise StandardError, "Non supported type: #{type}" unless InkindApi::Factory::Product.type_supported?(type.to_s)
 

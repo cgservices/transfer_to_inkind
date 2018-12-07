@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.transferto.com/v1.1/transactions/fixed_value_recharges
+    body:
+      encoding: UTF-8
+      string: '{"account_number":"911234567890","product_id":"1558","external_id":"14248512386098431","simulation":"1","sender_sms_notification":"1","sender_sms_text":"Sender
+        message","recipient_sms_notification":"1","recipient_sms_text":"Recipient
+        message","sender":{"last_name":"Delorm","middle_name":"","first_name":"John","email":"john@testaccount.com","mobile":"6012345678"},"recipient":{"last_name":"Delorm","middle_name":"","first_name":"Lisa","email":"lisa@testaccount.com","mobile":"911234567890"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 07 Dec 2018 15:13:38 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '63'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":1000500,"message":"Internal server error"}]}'
+    http_version: 
+  recorded_at: Fri, 07 Dec 2018 15:13:38 GMT
+- request:
+    method: post
+    uri: https://api.transferto.com/v1.1/transactions/variable_value_recharges
+    body:
+      encoding: UTF-8
+      string: '{"account_number":"911234567890","product_id":"1558","external_id":"14248512386098431","simulation":"1","sender_sms_notification":"1","sender_sms_text":"Sender
+        message","recipient_sms_notification":"1","recipient_sms_text":"Recipient
+        message","sender":{"last_name":"Delorm","middle_name":"","first_name":"John","email":"john@testaccount.com","mobile":"6012345678"},"recipient":{"last_name":"Delorm","middle_name":"","first_name":"Lisa","email":"lisa@testaccount.com","mobile":"911234567890"},"local_value":"29"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 07 Dec 2018 15:38:30 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '1164'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"transaction_id":"3736886","simulation":1,"status":"0","status_message":"Transaction
+        successful","date":"2018-12-07 15:38:29","account_number":"911234567890","external_id":"14248512386098431","operator_reference":"","product_id":"1558","product":"Airtel
+        Andhra Pradesh India Data Plan","product_desc":"Airtel Andhra Pradesh India
+        Data Plan","product_currency":"INR","product_value":29,"local_currency":"INR","local_value":29,"operator_id":"2184","operator":"Airtel
+        Andhra Pradesh India","country_id":"766","country":"India","account_currency":"USD","wholesale_price":0.5,"retail_price":0.58,"fee":0,"sender":{"last_name":"Delorm","middle_name":"","first_name":"John","email":"john@testaccount.com","mobile":"6012345678","custom_field_1":"","custom_field_2":"","custom_field_3":""},"recipient":{"last_name":"Delorm","middle_name":"","first_name":"Lisa","email":"lisa@testaccount.com","mobile":"911234567890","custom_field_1":"","custom_field_2":"","custom_field_3":""},"sender_sms_notification":1,"sender_sms_text":"Sender
+        message","recipient_sms_notification":1,"recipient_sms_text":"Recipient message","custom_field_1":"","custom_field_2":"","custom_field_3":""}'
+    http_version: 
+  recorded_at: Fri, 07 Dec 2018 15:38:30 GMT
+recorded_with: VCR 4.0.0

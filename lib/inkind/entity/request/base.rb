@@ -2,6 +2,7 @@ module InkindApi
   module Entity
     module Request
       class Base < ::InkindApi::Entity::Base
+
         attr_reader :account_number, :product_id, :external_id, :simulation,
                     :sender, :recipient, :sender_sms_notification, :sender_sms_text,
                     :recipient_sms_notification, :recipient_sms_text
@@ -43,12 +44,15 @@ module InkindApi
         private
 
         def missing_mandatory_fields?
-          mandatory_fields = %w[account_number product_id external_id]
           mandatory_fields.each do |mandatory_field|
             instance_variable = '@' + mandatory_field
             return true if instance_variable_defined?(instance_variable) && instance_variable_get(instance_variable).blank?
           end
           false
+        end
+
+        def mandatory_fields
+          %w[account_number product_id external_id]
         end
 
         def filter_base_parameters(parameters)

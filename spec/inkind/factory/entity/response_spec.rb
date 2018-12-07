@@ -15,8 +15,8 @@ describe InkindApi::Factory::Entity::Response do
     end
 
     context 'with a variable_value_recharge type' do
-      xit 'returns a VariableValueProduct response' do
-        expect(described_class.create('variable_value_recharges', {})).to be_a InkindApi::Entity::VariableValueProduct
+      it 'returns a VariableValueRecharge response' do
+        expect(described_class.create('variable_value_recharges', {})).to be_a InkindApi::Entity::Response::VariableValueRecharge
       end
     end
 

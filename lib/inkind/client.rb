@@ -34,6 +34,10 @@ module InkindApi
       request(:transaction).fixed_value_recharge(attributes: parameters)
     end
 
+    def variable_value_recharge(parameters)
+      request(:transaction).variable_value_recharge(attributes: parameters)
+    end
+
     def transaction_status(type, ext_transaction_id)
       request(:transaction).status(type, ext_transaction_id)
     end

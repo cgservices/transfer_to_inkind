@@ -113,7 +113,30 @@ describe InkindApi::Client do
           .at_least(:once)
           .and_call_original
 
-        VCR.use_cassette('fixed_value_vouchers') { subject.fixed_value_voucher(valid_parameters) }
+        VCR.use_cassette('fixed_value_vouchers') do
+          expect(subject.fixed_value_voucher(valid_parameters)).to be_a InkindApi::Entity::Response::FixedValueVoucher
+        end
+      end
+    end
+  end
+
+  describe '#fixed_value_recharge' do
+    context 'with valid data' do
+      let(:valid_parameters) { { 'account_number' => '6281234567890', 'product_id' => '315', 'external_id' => '14248512386098429', 'simulation' => '1', 'sender_sms_notification' => '1', 'sender_sms_text' => 'Sender message', 'recipient_sms_notification' => '1', 'recipient_sms_text' => 'Recipient message', 'sender' => { 'last_name' => 'Delorm', 'middle_name' => '', 'first_name' => 'John', 'email' => 'john@testaccount.com', 'mobile' => '6012345678' }, 'recipient' => { 'last_name' => 'Delorm', 'middle_name' => '', 'first_name' => 'Lisa', 'email' => 'lisa@testaccount.com', 'mobile' => '6281234567890' } } }
+      it 'calls fixed_value_recharges from the transaction request' do
+        expect(InkindApi::Request::Transaction)
+          .to receive(:new)
+                .at_least(:once)
+                .and_call_original
+
+        expect_any_instance_of(InkindApi::Request::Transaction)
+          .to receive(:fixed_value_recharge)
+                .at_least(:once)
+                .and_call_original
+
+        VCR.use_cassette('fixed_value_recharges') do
+          expect(subject.fixed_value_recharge(valid_parameters)).to be_a InkindApi::Entity::Response::FixedValueRecharge
+        end
       end
     end
   end

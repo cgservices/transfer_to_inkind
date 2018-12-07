@@ -30,6 +30,10 @@ module InkindApi
       request(:transaction).fixed_value_voucher(attributes: parameters)
     end
 
+    def fixed_value_recharge(parameters)
+      request(:transaction).fixed_value_recharge(attributes: parameters)
+    end
+
     def transaction_status(type, ext_transaction_id)
       request(:transaction).status(type, ext_transaction_id)
     end

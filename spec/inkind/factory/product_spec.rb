@@ -14,7 +14,7 @@ describe InkindApi::Factory::Product do
       end
     end
 
-    context 'with a variable_value_voucher product' do
+    context 'with a variable_value_recharge product' do
       it 'returns a VariableValueProduct' do
         expect(described_class.create('variable_value_recharges', {})).to be_a InkindApi::Entity::VariableValueProduct
       end

@@ -15,7 +15,7 @@ module InkindApi
         raise StandardError, "Non supported type: #{type}" unless InkindApi::Factory::Product.type_supported?(type.to_s)
 
         get("transactions/#{type}/ext-#{ext_transaction_id}") do |json|
-          return InkindApi::Entity::Response::FixedValueVoucher.new(json)
+          return InkindApi::Factory::Entity::Response.create(type, json)
         end
       end
     end

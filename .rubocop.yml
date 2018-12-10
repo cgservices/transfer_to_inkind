@@ -1,13 +1,23 @@
-require: rubocop-rspec
-
 AllCops:
   TargetRubyVersion: 2.2
+  Exclude:
+    - 'spec/**/*'
 
 AbcSize:
   Max: 20
 
+Performance:
+  Enabled: true
+
 Metrics/LineLength:
   Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Naming/VariableNumber:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
@@ -15,21 +25,20 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Performance:
-  Enabled: true
-
 Style/WordArray:
   Enabled: false
 
 RSpec/DescribeClass:
   Enabled: false
 
-Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*'
+Style/BlockComments:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
 
 RSpec/ExampleLength:
   Max: 10
 
-Style/BlockComments:
+RSpec/MessageSpies:
   Enabled: false

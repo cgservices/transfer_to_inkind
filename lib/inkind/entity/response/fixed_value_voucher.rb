@@ -20,7 +20,8 @@ module Inkind
         private
 
         def filter_parameters(parameters)
-          parameters.slice('voucher')
+          fields = %w[service_id voucher]
+          parameters.select { |k, _v| fields.include?(k) }
         end
       end
     end

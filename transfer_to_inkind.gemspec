@@ -21,7 +21,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency('json', '~> 1.8')
 
   gem.add_development_dependency 'bundler'
-  gem.add_development_dependency 'danger'
   gem.add_development_dependency('dotenv', '~> 2.5')
   gem.add_development_dependency('factory_bot', ['>= 0'])
   gem.add_development_dependency('faker', ['>= 0'])

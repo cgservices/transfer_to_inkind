@@ -48,24 +48,24 @@ describe InkindApi::Entity::VariableValueProduct do
   end
 
   describe '#min' do
-    it 'should return the minimal retail_price' do
+    it 'returns the minimal retail_price' do
       subject.suggested_values = build_suggested_values
       expect(subject.min(:retail_price)).to eq 0.2
     end
 
-    it 'should return the minimal wholesale_price' do
+    it 'returns the minimal wholesale_price' do
       subject.suggested_values = build_suggested_values
       expect(subject.min(:wholesale_price)).to eq 0.90
     end
   end
 
   describe '#max' do
-    it 'should return the maximal retail_price' do
+    it 'returns the maximal retail_price' do
       subject.suggested_values = build_suggested_values
       expect(subject.max(:retail_price)).to eq 10.00
     end
 
-    it 'should return the maximal wholesale_price' do
+    it 'returns the maximal wholesale_price' do
       subject.suggested_values = build_suggested_values
       expect(subject.max(:wholesale_price)).to eq 9.90
     end
@@ -73,6 +73,7 @@ describe InkindApi::Entity::VariableValueProduct do
 
   describe '#meta_data' do
     let(:suggested_value_params) { { 'local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0 } }
+
     it 'returns the right metadata' do
       suggested_value          = InkindApi::Entity::SuggestedValue.new(suggested_value_params)
       subject.suggested_values = [suggested_value]

@@ -2,6 +2,7 @@
 
 describe InkindApi::Entity::Country do
   subject { described_class.new('country_id' => 1, 'country' => 'France') }
+
   describe '#initialize' do
     context 'with valid values' do
       it 'initializes a country' do

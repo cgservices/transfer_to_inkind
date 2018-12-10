@@ -4,7 +4,7 @@ describe InkindApi::Request::Discovery do
   describe '#ping?' do
     it 'can ping the remote API' do
       VCR.use_cassette('ping') do
-        expect(subject.ping?).to eql(true)
+        expect(subject.ping?).to be(true)
       end
     end
   end

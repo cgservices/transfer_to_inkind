@@ -2,6 +2,7 @@
 
 describe InkindApi::Entity::Operator do
   let(:operator) { described_class.new('operator' => 'Sosh', 'operator_id' => 2, 'country_id' => 1, 'country' => 'France') }
+
   describe '#initialize' do
     context 'with valid values' do
       it 'initializes an operator' do

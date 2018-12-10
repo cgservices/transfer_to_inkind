@@ -2,7 +2,6 @@ module InkindApi
   module Entity
     module Request
       class Base < ::InkindApi::Entity::Base
-
         attr_reader :account_number, :product_id, :external_id, :simulation,
                     :sender, :recipient, :sender_sms_notification, :sender_sms_text,
                     :recipient_sms_notification, :recipient_sms_text

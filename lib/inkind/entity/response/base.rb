@@ -40,7 +40,6 @@ module InkindApi
                            'sender_sms_text', 'recipient_sms_notification', 'recipient_sms_text', 'sender', 'recipient',
                            'status', 'status_message', 'date', 'product', 'transaction_id', 'operator_reference')
         end
-
       end
     end
   end

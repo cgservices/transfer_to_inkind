@@ -1,3 +1,8 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.2
+
 AbcSize:
   Max: 20
 
@@ -17,9 +22,6 @@ Style/WordArray:
   Enabled: false
 
 RSpec/DescribeClass:
-  Enabled: false
-
-Rails/InverseOf:
   Enabled: false
 
 Metrics/BlockLength:

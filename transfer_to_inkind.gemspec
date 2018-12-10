@@ -25,7 +25,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('dotenv', '~> 2.5')
   gem.add_development_dependency('factory_bot', ['>= 0'])
   gem.add_development_dependency('faker', ['>= 0'])
-  gem.add_development_dependency('rubocop')
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'pry-coolline'
   gem.add_development_dependency 'pry-nav'
@@ -33,6 +32,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'pry-stack_explorer'
   gem.add_development_dependency('rake', ['>= 0'])
   gem.add_development_dependency('rspec', ['>= 0'])
+  gem.add_development_dependency('rubocop')
+  gem.add_development_dependency('rubocop-rspec')
   gem.add_development_dependency 'simplecov'
   gem.add_development_dependency('sqlite3', ['>= 0'])
   gem.add_development_dependency 'vcr'

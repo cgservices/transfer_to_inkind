@@ -29,25 +29,25 @@ describe InkindApi::Factory::Entity::Product do
 
   describe '.get_product_type' do
     context 'with a fixed_value_vouchers' do
-      it 'should return voucher' do
+      it 'returns voucher' do
         expect(described_class.get_product_type('fixed_value_vouchers')).to eq 'voucher'
       end
     end
 
     context 'with a fixed_value_recharges' do
-      it 'should return recharge' do
+      it 'returns recharge' do
         expect(described_class.get_product_type('fixed_value_recharges')).to eq 'recharge'
       end
     end
 
     context 'with a variable_value_recharges' do
-      it 'should return recharge' do
+      it 'returns recharge' do
         expect(described_class.get_product_type('variable_value_recharges')).to eq 'recharge'
       end
     end
 
     context 'with anything else' do
-      it 'should raise be nil' do
+      it 'raises be nil' do
         expect(described_class.get_product_type('foo')).to be nil
       end
     end
@@ -55,25 +55,25 @@ describe InkindApi::Factory::Entity::Product do
 
   describe '.type_supported?' do
     context 'with a fixed_value_vouchers' do
-      it 'should return true' do
+      it 'returns true' do
         expect(described_class.type_supported?('fixed_value_vouchers')).to be true
       end
     end
 
     context 'with a fixed_value_recharges' do
-      it 'should return true' do
+      it 'returns true' do
         expect(described_class.type_supported?('fixed_value_recharges')).to be true
       end
     end
 
     context 'with a variable_value_recharges' do
-      it 'should return true' do
+      it 'returns true' do
         expect(described_class.type_supported?('variable_value_recharges')).to be true
       end
     end
 
     context 'with anything else' do
-      it 'should return false' do
+      it 'returns false' do
         expect(described_class.type_supported?('foo')).to be false
       end
     end

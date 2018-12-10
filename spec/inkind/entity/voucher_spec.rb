@@ -4,6 +4,7 @@ describe InkindApi::Entity::Voucher do
   describe '#meta_data' do
     context 'with valid data' do
       subject { described_class.new(valid_parameters) }
+
       it 'returns the right meta_data' do
         expect(subject.meta_data).to eq valid_parameters
       end

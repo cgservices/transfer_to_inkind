@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_dependency('faraday', '0.15.4')
-  gem.add_dependency('json', '2.1.0')
+  gem.add_dependency('json', '~> 1.8')
 
   gem.add_development_dependency 'bundler'
   gem.add_development_dependency('dotenv', '~> 2.5')

@@ -1,6 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.2
   Exclude:
+    - 'vendor/*'
     - 'spec/**/*'
     - '*.gemspec'
 

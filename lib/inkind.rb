@@ -5,7 +5,6 @@ require 'net/http'
 require 'openssl'
 require 'base64'
 require 'json'
-require 'active_model'
 
 module InkindApi
   class Config

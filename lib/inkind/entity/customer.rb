@@ -12,7 +12,7 @@ module InkindApi
       end
 
       def valid?
-        !mobile.blank?
+        (!mobile.nil? && !mobile.empty?)
       end
     end
   end

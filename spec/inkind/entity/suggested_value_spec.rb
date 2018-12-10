@@ -18,9 +18,9 @@ describe InkindApi::Entity::SuggestedValue do
 
   describe '#initialize' do
     context 'with valid values' do
-      it 'initializes a sugdested value with the right values' do
-        expect(subject.local_value).to be 9
-        expect(subject.local_currency).to be 'INR'
+      it 'initializes a suggested value with the right values' do
+        expect(subject.local_value).to eq 9
+        expect(subject.local_currency).to eq 'INR'
         expect(subject.name).to eq '50 MB of 2G Plan for 1 Day'
         expect(subject.description).to eq 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day'
         expect(subject.additional_info_1).to eq 'type:2G Plan'

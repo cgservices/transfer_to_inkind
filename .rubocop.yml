@@ -2,6 +2,7 @@ AllCops:
   TargetRubyVersion: 2.2
   Exclude:
     - 'spec/**/*'
+    - '*.gemspec'
 
 AbcSize:
   Max: 20
@@ -32,13 +33,4 @@ RSpec/DescribeClass:
   Enabled: false
 
 Style/BlockComments:
-  Enabled: false
-
-RSpec/NamedSubject:
-  Enabled: false
-
-RSpec/ExampleLength:
-  Max: 10
-
-RSpec/MessageSpies:
   Enabled: false

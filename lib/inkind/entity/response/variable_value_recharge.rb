@@ -13,7 +13,8 @@ module Inkind
         end
 
         def filter_parameters(parameters)
-          parameters.slice('local_value')
+          fields = %w(local_value)
+          parameters.select { |k, _v| fields.include?(k) }
         end
       end
     end

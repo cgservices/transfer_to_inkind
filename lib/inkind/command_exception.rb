@@ -1,4 +1,4 @@
-module InkindApi
+module Inkind
   class ResponseException < StandardError
     def initialize(code, message, raw_response)
       case code

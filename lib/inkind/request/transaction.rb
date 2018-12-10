@@ -1,4 +1,4 @@
-module InkindApi
+module Inkind
   module Request
     class Transaction < Base
       def fixed_value_voucher(attributes:)
@@ -14,22 +14,22 @@ module InkindApi
       end
 
       def status(type, ext_transaction_id)
-        raise StandardError, "Non supported type: #{type}" unless InkindApi::Factory::Product.type_supported?(type.to_s)
+        raise StandardError, "Non supported type: #{type}" unless Inkind::Factory::Product.type_supported?(type.to_s)
 
         get("transactions/#{type}/ext-#{ext_transaction_id}") do |json|
-          return InkindApi::Factory::Entity::Response.create(type, json)
+          return Inkind::Factory::Entity::Response.create(type, json)
         end
       end
 
       private
 
       def perform_transaction(type, attributes)
-        request = InkindApi::Factory::Entity::Request.create(type, attributes)
+        request = Inkind::Factory::Entity::Request.create(type, attributes)
 
         raise StandardError, "Invalid #{type}request parameters: #{request.meta_data}" unless request.valid?
 
         post("transactions/#{type}", request.body) do |json|
-          return InkindApi::Factory::Entity::Response.create(type, json)
+          return Inkind::Factory::Entity::Response.create(type, json)
         end
       end
     end

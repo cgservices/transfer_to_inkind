@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-describe InkindApi::Factory::Entity::Product do
+describe Inkind::Factory::Entity::Product do
   describe '.create' do
     context 'with a fixed_value_voucher product' do
       it 'returns a FixedValueProduct' do
-        expect(described_class.create('fixed_value_vouchers', {})).to be_a InkindApi::Entity::FixedValueProduct
+        expect(described_class.create('fixed_value_vouchers', {})).to be_a Inkind::Entity::FixedValueProduct
       end
     end
 
     context 'with a fixed_value_recharge product' do
       it 'returns a FixedValueProduct' do
-        expect(described_class.create('fixed_value_recharges', {})).to be_a InkindApi::Entity::FixedValueProduct
+        expect(described_class.create('fixed_value_recharges', {})).to be_a Inkind::Entity::FixedValueProduct
       end
     end
 
     context 'with a variable_value_recharge product' do
       it 'returns a VariableValueProduct' do
-        expect(described_class.create('variable_value_recharges', {})).to be_a InkindApi::Entity::VariableValueProduct
+        expect(described_class.create('variable_value_recharges', {})).to be_a Inkind::Entity::VariableValueProduct
       end
     end
 

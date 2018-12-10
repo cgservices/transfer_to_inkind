@@ -1,10 +1,10 @@
-module InkindApi
+module Inkind
   module Entity
     module Response
-      class FixedValueRecharge < ::InkindApi::Entity::Response::Base
+      class FixedValueRecharge < ::Inkind::Entity::Response::Base
         def initialize(parameters = {})
           super(parameters)
-          @product = InkindApi::Factory::Entity::Product.create('fixed_value_recharges', parameters)
+          @product = Inkind::Factory::Entity::Product.create('fixed_value_recharges', parameters)
         end
       end
     end

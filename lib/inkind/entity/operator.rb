@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkindApi
+module Inkind
   module Entity
     class Operator < Base
       attr_reader :id, :name, :country

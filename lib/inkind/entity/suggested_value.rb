@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkindApi
+module Inkind
   module Entity
     class SuggestedValue < Base
       attr_accessor :local_value,

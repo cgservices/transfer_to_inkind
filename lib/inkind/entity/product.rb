@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkindApi
+module Inkind
   module Entity
     class Product < Base
       attr_reader :id, :name, :short_description,

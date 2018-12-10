@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkindApi
+module Inkind
   module Entity
     class VariableValueProduct < Product
       attr_accessor :suggested_values

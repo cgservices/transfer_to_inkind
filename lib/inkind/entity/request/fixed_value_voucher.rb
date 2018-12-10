@@ -1,7 +1,7 @@
-module InkindApi
+module Inkind
   module Entity
     module Request
-      class FixedValueVoucher < ::InkindApi::Entity::Request::Base
+      class FixedValueVoucher < ::Inkind::Entity::Request::Base
       end
     end
   end

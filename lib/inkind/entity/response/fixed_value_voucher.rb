@@ -1,13 +1,13 @@
-module InkindApi
+module Inkind
   module Entity
     module Response
-      class FixedValueVoucher < ::InkindApi::Entity::Response::Base
+      class FixedValueVoucher < ::Inkind::Entity::Response::Base
         attr_reader :voucher
 
         def initialize(parameters = {})
           super(parameters)
           attributes = filter_parameters parameters
-          @product   = InkindApi::Factory::Entity::Product.create('fixed_value_vouchers', parameters)
+          @product   = Inkind::Factory::Entity::Product.create('fixed_value_vouchers', parameters)
           @voucher   = Voucher.new(attributes.fetch('voucher', {}))
         end
 

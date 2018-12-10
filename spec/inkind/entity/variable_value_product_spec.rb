@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Entity::VariableValueProduct do
+describe Inkind::Entity::VariableValueProduct do
   parameters = {
     'product_id' => 64,
     'product_name' => '$14 Basic',
@@ -28,19 +28,19 @@ describe InkindApi::Entity::VariableValueProduct do
       end
 
       it 'initializes a product with a valid operator' do
-        expect(subject.service).to be_a InkindApi::Entity::Service
+        expect(subject.service).to be_a Inkind::Entity::Service
         expect(subject.service.id).to eq 1
         expect(subject.service.name).to eq 'television'
       end
 
       it 'initializes a product with a valid service' do
-        expect(subject.operator).to be_a InkindApi::Entity::Operator
+        expect(subject.operator).to be_a Inkind::Entity::Operator
         expect(subject.operator.id).to eq 1959
         expect(subject.operator.name).to eq 'Claro TV Guatemala USD'
       end
 
       it 'initializes a product with a valid country' do
-        expect(subject.country).to be_a InkindApi::Entity::Country
+        expect(subject.country).to be_a Inkind::Entity::Country
         expect(subject.country.id).to eq 756
         expect(subject.country.name).to eq 'Guatemala'
       end
@@ -75,7 +75,7 @@ describe InkindApi::Entity::VariableValueProduct do
     let(:suggested_value_params) { { 'local_value' => 9, 'local_currency' => 'INR', 'name' => '50 MB of 2G Plan for 1 Day', 'description' => 'AIRT / UPE / 9INR / 2G Plan / 50 MB / 1 Day', 'additional_info_1' => 'type:2G Plan', 'additional_info_2' => 'validity:1 Day', 'additional_info_3' => 'data_amount:50 MB', 'wholesale_price' => '0.14', 'retail_price' => '0.06', 'fee' => 0 } }
 
     it 'returns the right metadata' do
-      suggested_value          = InkindApi::Entity::SuggestedValue.new(suggested_value_params)
+      suggested_value          = Inkind::Entity::SuggestedValue.new(suggested_value_params)
       subject.suggested_values = [suggested_value]
 
       expect(subject.meta_data).to eq(

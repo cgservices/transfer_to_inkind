@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Entity::SuggestedValue do
+describe Inkind::Entity::SuggestedValue do
   parameters = {
     'local_value' => 9,
     'local_currency' => 'INR',

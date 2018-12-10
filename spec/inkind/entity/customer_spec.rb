@@ -1,4 +1,4 @@
-describe InkindApi::Entity::Customer do
+describe Inkind::Entity::Customer do
   let(:valid_parameters) { { 'last_name' => 'Delorm', 'middle_name' => '', 'first_name' => 'John', 'email' => 'john@testaccount.com', 'mobile' => '6012345678' } }
   let(:missing_mobile_parameters) { valid_parameters.except('mobile') }
   let(:empty_mobile_parameters) { valid_parameters.merge('mobile' => '') }

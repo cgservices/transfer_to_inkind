@@ -1,4 +1,4 @@
-module InkindApi
+module Inkind
   module Entity
     class Customer < Base
       attr_reader :last_name, :middle_name, :first_name, :email, :mobile

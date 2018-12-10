@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Entity::Country do
+describe Inkind::Entity::Country do
   subject { described_class.new('country_id' => 1, 'country' => 'France') }
 
   describe '#initialize' do

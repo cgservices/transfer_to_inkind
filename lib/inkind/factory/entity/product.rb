@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkindApi
+module Inkind
   module Factory
     module Entity
       class Product
@@ -11,9 +11,9 @@ module InkindApi
 
           case type
           when 'fixed_value_vouchers', 'fixed_value_recharges'
-            return InkindApi::Entity::FixedValueProduct.new product_data
+            return Inkind::Entity::FixedValueProduct.new product_data
           when 'variable_value_recharges'
-            return InkindApi::Entity::VariableValueProduct.new(product_data, suggested_values)
+            return Inkind::Entity::VariableValueProduct.new(product_data, suggested_values)
           else
             raise StandardError.new, "Non supported product type: #{type}"
           end

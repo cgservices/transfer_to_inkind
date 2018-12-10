@@ -1,4 +1,4 @@
-module InkindApi
+module Inkind
   module Entity
     class Voucher < Base
       attr_accessor :pin, :pin2, :currency, :value, :expiration_date, :info_1, :info_2, :info_3

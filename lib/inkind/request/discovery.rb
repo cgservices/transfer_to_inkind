@@ -1,4 +1,4 @@
-module InkindApi
+module Inkind
   module Request
     class Discovery < Base
       def ping?
@@ -40,7 +40,7 @@ module InkindApi
           product_types.flat_map do |product_type|
             json[product_type].map do |product|
               suggested_values = product_type == 'variable_value_recharges' ? suggested_values(product['product_id']) : nil
-              InkindApi::Factory::Entity::Product.create(product_type, product, suggested_values)
+              Inkind::Factory::Entity::Product.create(product_type, product, suggested_values)
             end
           end
         end

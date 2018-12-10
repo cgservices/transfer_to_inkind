@@ -6,7 +6,7 @@ require 'openssl'
 require 'base64'
 require 'json'
 
-module InkindApi
+module Inkind
   class Config
     attr_writer :base_url,
                 :api_key,

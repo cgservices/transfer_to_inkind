@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkindApi
+module Inkind
   module Entity
     class FixedValueProduct < Product
       attr_reader :value, :local_value, :local_currency,

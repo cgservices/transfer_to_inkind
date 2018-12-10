@@ -1,4 +1,4 @@
-module InkindApi
+module Inkind
   module Request
     class Base
       def initialize(config:)

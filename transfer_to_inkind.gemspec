@@ -5,7 +5,7 @@ require 'inkind/version'
 
 Gem::Specification.new do |gem|
   gem.name        = 'transfer_to_inkind'
-  gem.version     = InkindApi::VERSION
+  gem.version     = Inkind::VERSION
   gem.authors     = ['Sander van Rossum', 'Nicolas Dreux']
   gem.email       = ['sander.van.rossum@cg.nl', 'nicolas,dreux@cg.nl']
   gem.description = 'Consumes TransferTo.com InKind API and provides ruby methods for the same'

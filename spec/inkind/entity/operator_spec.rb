@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Entity::Operator do
+describe Inkind::Entity::Operator do
   let(:operator) { described_class.new('operator' => 'Sosh', 'operator_id' => 2, 'country_id' => 1, 'country' => 'France') }
 
   describe '#initialize' do
@@ -8,7 +8,7 @@ describe InkindApi::Entity::Operator do
       it 'initializes an operator' do
         expect(operator.id).to be 2
         expect(operator.name).to eq 'Sosh'
-        expect(operator.country).to be_a InkindApi::Entity::Country
+        expect(operator.country).to be_a Inkind::Entity::Country
         expect(operator.country.id).to be 1
         expect(operator.country.name).to eq 'France'
       end

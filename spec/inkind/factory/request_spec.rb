@@ -1,16 +1,16 @@
-describe InkindApi::Factory::Request do
+describe Inkind::Factory::Request do
   describe '.create' do
-    let(:config) { InkindApi::Config.new }
+    let(:config) { Inkind::Config.new }
 
     context 'with valid type' do
       it 'returns a Discovery request with :discovery' do
         request = described_class.create(:discovery, config: config)
-        expect(request).to be_a InkindApi::Request::Discovery
+        expect(request).to be_a Inkind::Request::Discovery
       end
 
       it 'returns a Transaction request with :transaction' do
         request = described_class.create(:transaction, config: config)
-        expect(request).to be_a InkindApi::Request::Transaction
+        expect(request).to be_a Inkind::Request::Transaction
       end
     end
 

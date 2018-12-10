@@ -1,4 +1,4 @@
-describe InkindApi::Entity::Request::VariableValueRecharge do
+describe Inkind::Entity::Request::VariableValueRecharge do
   let(:valid_parameters) { { 'account_number' => '911234567890', 'product_id' => '1558', 'external_id' => '14248512386098431', 'local_value' => '29', 'simulation' => '1', 'sender_sms_notification' => '1', 'sender_sms_text' => 'Sender message', 'recipient_sms_notification' => '1', 'recipient_sms_text' => 'Recipient message', 'sender' => { 'last_name' => 'Delorm', 'middle_name' => '', 'first_name' => 'John', 'email' => 'john@testaccount.com', 'mobile' => '6012345678' }, 'recipient' => { 'last_name' => 'Delorm', 'middle_name' => '', 'first_name' => 'Lisa', 'email' => 'lisa@testaccount.com', 'mobile' => '911234567890' } } }
   let(:invalid_sender_parameters) { valid_parameters.merge('sender' => valid_parameters['sender'].except('mobile')) }
   let(:invalid_recipient_parameters) { valid_parameters.merge('recipient' => valid_parameters['recipient'].except('mobile')) }

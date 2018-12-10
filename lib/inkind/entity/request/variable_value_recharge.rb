@@ -1,7 +1,7 @@
-module InkindApi
+module Inkind
   module Entity
     module Request
-      class VariableValueRecharge < ::InkindApi::Entity::Request::Base
+      class VariableValueRecharge < ::Inkind::Entity::Request::Base
         attr_reader :local_value
 
         def initialize(parameters)

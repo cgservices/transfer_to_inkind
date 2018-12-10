@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Entity::Service do
+describe Inkind::Entity::Service do
   describe '#initialize' do
     context 'with valid values' do
       service = described_class.new('service_id' => 3, 'service' => 'television')

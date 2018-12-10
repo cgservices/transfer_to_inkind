@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 FactoryBot.define do
-  factory :suggested_value, class: InkindApi::Entity::SuggestedValue do
+  factory :suggested_value, class: Inkind::Entity::SuggestedValue do
     local_value { Faker::Number.number(2) }
     local_currency { Faker::Currency.code }
     name { Faker::Lorem.word }

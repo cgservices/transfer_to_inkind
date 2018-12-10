@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe InkindApi::Entity::FixedValueProduct do
+describe Inkind::Entity::FixedValueProduct do
   parameters = {
     'product_id' => 64,
     'product_name' => '$14 Basic',
@@ -40,19 +40,19 @@ describe InkindApi::Entity::FixedValueProduct do
       end
 
       it 'initializes a product with a valid operator' do
-        expect(subject.service).to be_a InkindApi::Entity::Service
+        expect(subject.service).to be_a Inkind::Entity::Service
         expect(subject.service.id).to eq 1
         expect(subject.service.name).to eq 'television'
       end
 
       it 'initializes a product with a valid service' do
-        expect(subject.operator).to be_a InkindApi::Entity::Operator
+        expect(subject.operator).to be_a Inkind::Entity::Operator
         expect(subject.operator.id).to eq 1959
         expect(subject.operator.name).to eq 'Claro TV Guatemala USD'
       end
 
       it 'initializes a product with a valid country' do
-        expect(subject.country).to be_a InkindApi::Entity::Country
+        expect(subject.country).to be_a Inkind::Entity::Country
         expect(subject.country.id).to eq 756
         expect(subject.country.name).to eq 'Guatemala'
       end

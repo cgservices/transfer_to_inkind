@@ -1,7 +1,7 @@
-module InkindApi
+module Inkind
   module Entity
     module Request
-      class FixedValueRecharge < ::InkindApi::Entity::Request::Base
+      class FixedValueRecharge < ::Inkind::Entity::Request::Base
       end
     end
   end

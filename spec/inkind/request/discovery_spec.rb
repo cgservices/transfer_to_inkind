@@ -1,5 +1,5 @@
-describe InkindApi::Request::Discovery do
-  subject { described_class.new(config: InkindApi::Config.new) }
+describe Inkind::Request::Discovery do
+  subject { described_class.new(config: Inkind::Config.new) }
 
   describe '#ping?' do
     it 'can ping the remote API' do
@@ -11,7 +11,7 @@ describe InkindApi::Request::Discovery do
 
   describe '#countries' do
     it 'can retrieve countries' do
-      expect(InkindApi::Entity::Country)
+      expect(Inkind::Entity::Country)
         .to receive(:new)
         .at_least(:once)
         .and_call_original
@@ -24,11 +24,11 @@ describe InkindApi::Request::Discovery do
 
   describe '#operators' do
     it 'can retrieve operators' do
-      expect(InkindApi::Entity::Operator)
+      expect(Inkind::Entity::Operator)
         .to receive(:new)
         .at_least(:once)
         .and_call_original
-      expect(InkindApi::Entity::Country)
+      expect(Inkind::Entity::Country)
         .to receive(:new)
         .at_least(:once)
         .and_call_original
@@ -42,19 +42,19 @@ describe InkindApi::Request::Discovery do
   describe '#products' do
     context 'with no operator id given' do
       it 'can retrieve products for all operators' do
-        expect(InkindApi::Entity::Operator)
+        expect(Inkind::Entity::Operator)
           .to receive(:new)
           .at_least(:once)
           .and_call_original
-        expect(InkindApi::Entity::Country)
+        expect(Inkind::Entity::Country)
           .to receive(:new)
           .at_least(:once)
           .and_call_original
-        expect(InkindApi::Entity::FixedValueProduct)
+        expect(Inkind::Entity::FixedValueProduct)
           .to receive(:new)
           .at_least(:once)
           .and_call_original
-        expect(InkindApi::Entity::VariableValueProduct)
+        expect(Inkind::Entity::VariableValueProduct)
           .to receive(:new)
           .at_least(:once)
           .and_call_original
@@ -66,15 +66,15 @@ describe InkindApi::Request::Discovery do
 
       context 'with an operator_id' do
         it 'can retrieve products for a specific operator' do
-          expect(InkindApi::Entity::Operator)
+          expect(Inkind::Entity::Operator)
             .to receive(:new)
             .at_least(:once)
             .and_call_original
-          expect(InkindApi::Entity::Country)
+          expect(Inkind::Entity::Country)
             .to receive(:new)
             .at_least(:once)
             .and_call_original
-          expect(InkindApi::Entity::Product)
+          expect(Inkind::Entity::Product)
             .to receive(:new)
             .at_least(:once)
 
@@ -89,7 +89,7 @@ describe InkindApi::Request::Discovery do
 
     describe '#servcies' do
       it 'can retrieve services' do
-        expect(InkindApi::Entity::Service)
+        expect(Inkind::Entity::Service)
           .to receive(:new)
           .at_least(:once)
           .and_call_original

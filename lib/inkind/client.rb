@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module InkindApi
+module Inkind
   class Client
     def initialize(config:)
       @config = config
@@ -45,7 +45,7 @@ module InkindApi
     private
 
     def request(type)
-      InkindApi::Factory::Request.create(type, @config)
+      Inkind::Factory::Request.create(type, @config)
     end
   end
 end

@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.transferto.com/v1.1/transactions/fixed_value_vouchers
+    body:
+      encoding: UTF-8
+      string: '{"account_number":"6281234567890","product_id":"112","external_id":"14248512386098429","simulation":"1","sender_sms_notification":"1","sender_sms_text":"Sender
+        message","recipient_sms_notification":"1","recipient_sms_text":"Recipient
+        message","sender":{"last_name":"Delorm","middle_name":"","first_name":"John","email":"john@testaccount.com","mobile":"6012345678"},"recipient":{"last_name":"Delorm","middle_name":"","first_name":"Lisa","email":"lisa@testaccount.com","mobile":"6281234567890"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 26 Nov 2018 14:32:57 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '1254'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"transaction_id":"3624298","simulation":1,"status":"0","status_message":"Transaction
+        successful","date":"2018-11-26 14:32:57","account_number":"6281234567890","external_id":"14248512386098429","operator_reference":"","product_id":"112","product":"Gift
+        Card 100GTQ","product_desc":"Pharmacy 100GTQ Voucher","product_currency":"GTQ","product_value":100,"local_currency":"GTQ","local_value":100,"operator_id":"2061","operator":"Farmacias
+        Cruz Verde Guatemala","country_id":"756","country":"Guatemala","account_currency":"USD","wholesale_price":14.79,"retail_price":17.4,"fee":0,"sender":{"last_name":"Delorm","middle_name":"","first_name":"John","email":"john@testaccount.com","mobile":"6012345678","custom_field_1":"","custom_field_2":"","custom_field_3":""},"recipient":{"last_name":"Delorm","middle_name":"","first_name":"Lisa","email":"lisa@testaccount.com","mobile":"6281234567890","custom_field_1":"","custom_field_2":"","custom_field_3":""},"sender_sms_notification":1,"sender_sms_text":"Sender
+        message","recipient_sms_notification":1,"recipient_sms_text":"Recipient message","custom_field_1":"","custom_field_2":"","custom_field_3":"","voucher":{"info_1":"","currency":"","pin2":"","pin":"","info_3":"","value":"","expiration_date":"","info_2":""}}'
+    http_version: 
+  recorded_at: Mon, 26 Nov 2018 14:32:57 GMT
+recorded_with: VCR 4.0.0

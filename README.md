@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-    @inkind_client = InkindApi::Client.new(config: InkindApi::Config.new)
+    @inkind_client = Inkind::Client.new(config: Inkind::Config.new)
 
 ## Integration testing
 

@@ -17,7 +17,8 @@ module InkindApi
       end
 
       def filter_parameters(parameters)
-        parameters.slice('pin', 'pin2', 'currency', 'value', 'expiration_date', 'info_1', 'info_2', 'info_3')
+        fields = %w[pin pin2 currency value expiration_date info_1 info_2 info_3]
+        parameters.select { |k, _v| fields.include?(k) }
       end
     end
   end

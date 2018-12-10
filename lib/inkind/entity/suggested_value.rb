@@ -32,10 +32,9 @@ module InkindApi
       private
 
       def suggested_value_parameters(suggested_value_params)
-        suggested_value_params.slice('local_value', 'local_currency',
-                                     'name', 'description',
-                                     'additional_info_1', 'additional_info_2', 'additional_info_3',
-                                     'wholesale_price', 'retail_price', 'fee')
+        fields = %w[local_value local_currency name description additional_info_1 additional_info_2 additional_info_3
+                    wholesale_price retail_price fee]
+        suggested_value_params.select { |k, _v| fields.include?(k) }
       end
     end
   end

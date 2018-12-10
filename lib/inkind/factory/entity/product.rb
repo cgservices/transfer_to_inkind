@@ -20,7 +20,8 @@ module InkindApi
         end
 
         def self.get_product_type(type)
-          ActiveSupport::Inflector.singularize(type.split('_').to_a[2].to_s) if type_supported?(type)
+          return 'recharge' if type.include?('recharge')
+          return 'voucher' if type.include?('voucher')
         end
 
         def self.type_supported?(type)

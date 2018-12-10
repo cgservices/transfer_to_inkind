@@ -33,10 +33,9 @@ module InkindApi
       private
 
       def product_parameters(product_params)
-        product_params.slice('product_id', 'product_name', 'product_short_desc',
-                             'operator_id', 'operator', 'country_id', 'country',
-                             'service_id', 'service',
-                             'product_currency', 'account_currency', 'type', 'product')
+        fields = %w[product_id product_name product_short_desc operator_id operator country_id country service_id
+                    service product_currency account_currency type product]
+        product_params.select { |k, _v| fields.include?(k) }
       end
     end
   end

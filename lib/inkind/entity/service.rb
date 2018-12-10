@@ -15,7 +15,8 @@ module InkindApi
       private
 
       def service_parameters(service_params)
-        service_params.slice('service_id', 'service')
+        fields = %w[service_id service]
+        service_params.select { |k, _v| fields.include?(k) }
       end
     end
   end

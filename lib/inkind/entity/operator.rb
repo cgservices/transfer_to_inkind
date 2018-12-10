@@ -22,7 +22,8 @@ module InkindApi
       private
 
       def operator_parameters(operator_params)
-        operator_params.slice('operator_id', 'operator')
+        fields = %w[operator_id operator]
+        operator_params.select { |k, _v| fields.include?(k) }
       end
     end
   end

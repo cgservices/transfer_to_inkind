@@ -15,7 +15,8 @@ module InkindApi
       private
 
       def country_parameters(country_params)
-        country_params.slice('country_id', 'country')
+        fields = %w[country_id country]
+        country_params.select { |k, _v| fields.include?(k) }
       end
     end
   end

@@ -21,8 +21,8 @@ module InkindApi
       private
 
       def fixed_product_parameters(product_params)
-        product_params.slice('product_value', 'local_value', 'local_currency',
-                             'wholesale_price', 'retail_price', 'fee')
+        fields = %w[product_value local_value local_currency wholesale_price retail_price fee]
+        product_params.select { |k, _v| fields.include?(k) }
       end
     end
   end

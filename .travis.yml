@@ -9,5 +9,5 @@ script:
   - bundle install
   - cp .envtest .env
   - bundle exec rspec
-  - bundle exec rubocop --config .rubocop.yml
+  #- bundle exec rubocop --config .rubocop.yml
   - bundle exec danger --fail-on-errors=true

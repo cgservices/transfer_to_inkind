@@ -8,8 +8,8 @@ describe Inkind::Request::Transaction do
       it 'returns a FixedValueVoucher response' do
         expect(Inkind::Entity::Response::FixedValueVoucher)
           .to receive(:new)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         VCR.use_cassette('fixed_value_vouchers') do
           expect(subject.fixed_value_voucher(attributes: valid_parameters)).to be_a Inkind::Entity::Response::FixedValueVoucher
@@ -19,8 +19,11 @@ describe Inkind::Request::Transaction do
   end
 
   describe '#status' do
-    context 'with valid data' do
-      xit 'returns the associated FixedValueVoucher response' do
+    context 'with an unknown transaction' do
+      it 'should raise a Inkind::Exception::TransactionNotFound' do
+        VCR.use_cassette('fixed_value_vouchers') do
+          expect { subject.status(:fixed_value_vouchers, 1337) }.to raise_exception Inkind::Exception::TransactionNotFound
+        end
       end
     end
   end
@@ -32,8 +35,8 @@ describe Inkind::Request::Transaction do
       it 'returns a FixedValueRecharge response' do
         expect(Inkind::Entity::Response::FixedValueRecharge)
           .to receive(:new)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         VCR.use_cassette('fixed_value_recharges') do
           expect(subject.fixed_value_recharge(attributes: valid_parameters)).to be_a Inkind::Entity::Response::FixedValueRecharge
@@ -49,8 +52,8 @@ describe Inkind::Request::Transaction do
       it 'returns a VariableValueRecharge response' do
         expect(Inkind::Entity::Response::VariableValueRecharge)
           .to receive(:new)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         VCR.use_cassette('variable_value_recharges') do
           expect(subject.variable_value_recharge(attributes: valid_parameters)).to be_a Inkind::Entity::Response::VariableValueRecharge

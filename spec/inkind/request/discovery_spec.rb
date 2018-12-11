@@ -87,7 +87,7 @@ describe Inkind::Request::Discovery do
       end
     end
 
-    describe '#servcies' do
+    describe '#services' do
       it 'can retrieve services' do
         expect(Inkind::Entity::Service)
           .to receive(:new)

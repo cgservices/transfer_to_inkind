@@ -10,7 +10,7 @@ module Inkind
       attr_accessor :config
 
       def get(url, parameters = {})
-        conn     = Faraday.new(url: config.base_url)
+        conn = Faraday.new(url: config.base_url)
         # IMPROVE: Should catch a ConnectionError if failing
         response = conn.get(url, parameters, get_headers)
         json     = JSON.parse(response.body)
@@ -19,7 +19,7 @@ module Inkind
       end
 
       def post(url, parameters)
-        conn     = Faraday.new(url: config.base_url)
+        conn = Faraday.new(url: config.base_url)
         # IMPROVE: Should catch a ConnectionError if failing
         response = conn.post(url, parameters, post_headers)
         json     = JSON.parse(response.body)
@@ -49,7 +49,9 @@ module Inkind
       end
 
       def capture_error(json)
-        ResponseException.new(json['errors'][0]['code'], json['errors'][0]['message'], json) if json['errors']
+        return unless json['errors']
+
+        raise Inkind::Factory::Exception.create(json['errors'][0]['code'], json['errors'][0]['message'], json)
       end
     end
   end

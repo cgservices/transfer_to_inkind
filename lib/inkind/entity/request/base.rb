@@ -48,8 +48,8 @@ module Inkind
         def missing_mandatory_fields?
           mandatory_fields.each do |mandatory_field|
             instance_variable = '@' + mandatory_field
-            variable_empty    = instance_variable_get(instance_variable).nil? || instance_variable_get(instance_variable).empty?
-            return true if instance_variable_defined?(instance_variable) && variable_empty
+            variable_nil      = instance_variable_get(instance_variable).nil?
+            return true if instance_variable_defined?(instance_variable) && variable_nil
           end
           false
         end

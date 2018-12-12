@@ -9,7 +9,7 @@ module Inkind
         def self.create(type, product_data, suggested_values = [])
           product_data['type'] = get_product_type(type)
 
-          case type
+          case type.to_s
           when 'fixed_value_vouchers', 'fixed_value_recharges'
             return Inkind::Entity::FixedValueProduct.new product_data
           when 'variable_value_recharges'
@@ -25,7 +25,7 @@ module Inkind
         end
 
         def self.type_supported?(type)
-          SUPPORTED_TYPES.include?(type)
+          SUPPORTED_TYPES.include?(type.to_s)
         end
       end
     end

@@ -1,17 +1,18 @@
 describe Inkind::Client do
-  subject { described_class.new(config: Inkind::Config.new) }
+  let(:config) { Inkind::Config.new }
+  subject { described_class.new(config: config) }
 
   describe '#ping?' do
     it 'calls ping? from the discovery request' do
       expect(Inkind::Request::Discovery)
         .to receive(:new)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       expect_any_instance_of(Inkind::Request::Discovery)
         .to receive(:ping?)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       VCR.use_cassette('ping') { subject.ping? }
     end
@@ -21,13 +22,13 @@ describe Inkind::Client do
     it 'calls countries from the discovery request' do
       expect(Inkind::Request::Discovery)
         .to receive(:new)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       expect_any_instance_of(Inkind::Request::Discovery)
         .to receive(:countries)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       VCR.use_cassette('countries') { subject.countries }
     end
@@ -37,13 +38,13 @@ describe Inkind::Client do
     it 'calls operators from the discovery request' do
       expect(Inkind::Request::Discovery)
         .to receive(:new)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       expect_any_instance_of(Inkind::Request::Discovery)
         .to receive(:operators)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       VCR.use_cassette('operators') { subject.operators }
     end
@@ -54,13 +55,13 @@ describe Inkind::Client do
       it 'calls products from the discovery request' do
         expect(Inkind::Request::Discovery)
           .to receive(:new)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         expect_any_instance_of(Inkind::Request::Discovery)
           .to receive(:products)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         VCR.use_cassette('products') { subject.products }
       end
@@ -69,13 +70,13 @@ describe Inkind::Client do
         it 'calls products from the discovery request' do
           expect(Inkind::Request::Discovery)
             .to receive(:new)
-            .at_least(:once)
-            .and_call_original
+                  .at_least(:once)
+                  .and_call_original
 
           expect_any_instance_of(Inkind::Request::Discovery)
             .to receive(:products)
-            .at_least(:once)
-            .and_call_original
+                  .at_least(:once)
+                  .and_call_original
 
           operator = VCR.use_cassette('operators') { subject.operators.first }
 
@@ -89,13 +90,13 @@ describe Inkind::Client do
     it 'calls services from the discovery request' do
       expect(Inkind::Request::Discovery)
         .to receive(:new)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       expect_any_instance_of(Inkind::Request::Discovery)
         .to receive(:services)
-        .at_least(:once)
-        .and_call_original
+              .at_least(:once)
+              .and_call_original
 
       VCR.use_cassette('services') { subject.services }
     end
@@ -108,13 +109,13 @@ describe Inkind::Client do
       it 'calls fixed_value_vouchers from the transaction request' do
         expect(Inkind::Request::Transaction)
           .to receive(:new)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         expect_any_instance_of(Inkind::Request::Transaction)
           .to receive(:fixed_value_voucher)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         VCR.use_cassette('fixed_value_vouchers') do
           expect(subject.fixed_value_voucher(valid_parameters)).to be_a Inkind::Entity::Response::FixedValueVoucher
@@ -130,13 +131,13 @@ describe Inkind::Client do
       it 'calls fixed_value_recharges from the transaction request' do
         expect(Inkind::Request::Transaction)
           .to receive(:new)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         expect_any_instance_of(Inkind::Request::Transaction)
           .to receive(:fixed_value_recharge)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         VCR.use_cassette('fixed_value_recharges') do
           expect(subject.fixed_value_recharge(valid_parameters)).to be_a Inkind::Entity::Response::FixedValueRecharge
@@ -152,17 +153,28 @@ describe Inkind::Client do
       it 'calls variable_value_recharges from the transaction request' do
         expect(Inkind::Request::Transaction)
           .to receive(:new)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         expect_any_instance_of(Inkind::Request::Transaction)
           .to receive(:variable_value_recharge)
-          .at_least(:once)
-          .and_call_original
+                .at_least(:once)
+                .and_call_original
 
         VCR.use_cassette('variable_value_recharges') do
           expect(subject.variable_value_recharge(valid_parameters)).to be_a Inkind::Entity::Response::VariableValueRecharge
         end
+      end
+    end
+  end
+
+  describe '#transaction_status' do
+    context "with a fixed_value_voucher" do
+      let(:transaction_request) { instance_double(Inkind::Request::Transaction) }
+      it 'should call a Transaction request' do
+        allow(Inkind::Factory::Request).to receive(:create).with(:transaction, config).and_return transaction_request
+        expect(transaction_request).to receive(:status).with(:fixed_value_vouchers, 1234567890).once
+        subject.transaction_status(:fixed_value_vouchers, 1234567890)
       end
     end
   end

@@ -14,7 +14,7 @@ module Inkind
       end
 
       def status(type, ext_transaction_id)
-        raise StandardError, "Non supported type: #{type}" unless Inkind::Factory::Product.type_supported?(type.to_s)
+        raise StandardError, "Non supported type: #{type}" unless Inkind::Factory::Entity::Product.type_supported?(type.to_s)
 
         get("transactions/#{type}/ext-#{ext_transaction_id}") do |json|
           return Inkind::Factory::Entity::Response.create(type, json)

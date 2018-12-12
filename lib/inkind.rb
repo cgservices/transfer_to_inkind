@@ -27,8 +27,8 @@ module Inkind
 end
 
 require 'inkind/version'
-require 'inkind/connection_exception'
-require 'inkind/command_exception'
+require 'inkind/exception/connection_exception'
+require 'inkind/exception/response_exception'
 require 'inkind/client'
 require 'inkind/request/base'
 require 'inkind/request/discovery'
@@ -37,6 +37,7 @@ require 'inkind/factory/entity/product'
 require 'inkind/factory/entity/response'
 require 'inkind/factory/entity/request'
 require 'inkind/factory/request'
+require 'inkind/factory/exception'
 require 'inkind/entity/base'
 require 'inkind/entity/request/base'
 require 'inkind/entity/request/fixed_value_voucher'

@@ -2,8 +2,7 @@ module Inkind
   module Entity
     module Request
       class Base < ::Inkind::Entity::Base
-
-        DEFAULT_SIMULATION_MODE = '1'
+        DEFAULT_SIMULATION_MODE = '1'.freeze
 
         attr_reader :account_number, :product_id, :external_id, :simulation,
                     :sender, :recipient, :sender_sms_notification, :sender_sms_text,
@@ -59,8 +58,8 @@ module Inkind
         end
 
         def filter_base_parameters(parameters)
-          fields = %w(account_number product_id external_id simulation sender_sms_notification sender_sms_text
-                    recipient_sms_notification recipient_sms_text sender recipient)
+          fields = %w[account_number product_id external_id simulation sender_sms_notification sender_sms_text
+                      recipient_sms_notification recipient_sms_text sender recipient]
           parameters.select { |k, _v| fields.include?(k) }
         end
       end

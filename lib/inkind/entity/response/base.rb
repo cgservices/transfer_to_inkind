@@ -36,9 +36,9 @@ module Inkind
         private
 
         def filter_base_parameters(parameters)
-          fields = %w(account_number external_id simulation sender_sms_notification sender_sms_text
-                    recipient_sms_notification recipient_sms_text sender recipient status status_message date product
-                    transaction_id operator_reference)
+          fields = %w[account_number external_id simulation sender_sms_notification sender_sms_text
+                      recipient_sms_notification recipient_sms_text sender recipient status status_message date product
+                      transaction_id operator_reference]
           parameters.select { |k, _v| fields.include?(k) }
         end
       end

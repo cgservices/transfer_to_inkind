@@ -2,7 +2,7 @@ module Inkind
   module Entity
     module Response
       class VariableValueRecharge < ::Inkind::Entity::Response::Base
-        attr_reader :local_value
+        attr_reader :local_value, :local_currency, :wholesale_price, :retail_price, :fee
 
         def initialize(parameters = {})
           super(parameters)

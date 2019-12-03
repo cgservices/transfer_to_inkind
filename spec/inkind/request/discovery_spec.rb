@@ -7,6 +7,24 @@ describe Inkind::Request::Discovery do
         expect(subject.ping?).to be(true)
       end
     end
+
+    context 'when receiving a Faraday::TimeoutError' do
+      before do
+        allow_any_instance_of(Faraday::Connection).to receive(:get).and_raise(Faraday::TimeoutError.new)
+      end
+      it 'raises a Inkind::Exception::TimeoutException error' do
+        expect{subject.ping?}.to raise_exception Inkind::Exception::TimeoutException
+      end
+    end
+
+    context 'when receiving a Faraday::ConnectionFailed' do
+      before do
+        allow_any_instance_of(Faraday::Connection).to receive(:get).and_raise(Faraday::ConnectionFailed.new('connection failed'))
+      end
+      it 'raises a Inkind::Exception::TimeoutException error' do
+        expect{subject.ping?}.to raise_exception Inkind::Exception::ConnectionException
+      end
+    end
   end
 
   describe '#countries' do

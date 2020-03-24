@@ -17,21 +17,21 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_dependency('faraday', '0.15.4')
-  gem.add_dependency('json', '~> 1.8')
+  gem.add_dependency 'faraday', '0.15.4'
+  gem.add_dependency 'json', ['>= 0']
 
   gem.add_development_dependency 'bundler'
-  gem.add_development_dependency('dotenv', '~> 2.5')
-  gem.add_development_dependency('factory_bot', ['>= 0'])
-  gem.add_development_dependency('faker', ['>= 0'])
+  gem.add_development_dependency 'dotenv', '~> 2.5'
+  gem.add_development_dependency 'factory_bot', ['>= 0']
+  gem.add_development_dependency 'faker', ['>= 0']
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'pry-coolline'
   gem.add_development_dependency 'pry-nav'
   gem.add_development_dependency 'pry-rescue'
   gem.add_development_dependency 'pry-stack_explorer'
-  gem.add_development_dependency('rake', ['>= 0'])
-  gem.add_development_dependency('rspec', ['>= 0'])
-  gem.add_development_dependency('rubocop')
+  gem.add_development_dependency 'rake', ['>= 0']
+  gem.add_development_dependency 'rspec', ['>= 0']
+  gem.add_development_dependency 'rubocop'
   gem.add_development_dependency 'simplecov'
   gem.add_development_dependency 'vcr'
   gem.add_development_dependency 'webmock'
